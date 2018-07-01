@@ -1,0 +1,12 @@
+chardet
+coverage
+guzzle_sphinx_theme
+jyquickhelper
+pyensae
+pymyinstall
+pyquickhelper>=1.8.2602
+sphinx_bootstrap_theme
+sphinxjp.themes.basicstrap
+sphinxjp.themes.sphinxjp
+wheel
+
