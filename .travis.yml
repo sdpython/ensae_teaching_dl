@@ -31,8 +31,9 @@ install:
   - sudo apt-get install -qq gcc-6 g++-6
   - pip install -r requirements_conda.txt
   - pip install -r requirements.txt
+  - pip install http://download.pytorch.org/whl/cu91/torch-0.4.0-cp36-cp36m-linux_x86_64.whl
+  - pip install torchvision  
 before_script:
   - python setup.py build_ext --inplace
-  - conda install -q pytorch torchvision -c soumith
 script:
   - python setup.py unittests
