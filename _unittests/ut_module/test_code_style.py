@@ -36,6 +36,9 @@ class TestCodeStyle(ExtTestCase):
                          "E1101: Module 'torch' has no ",
                          "E1101: Class 'mem_flags' has no ",
                          "W0221: Parameters differ from overridden 'forward'",
+                         "E0401: Unable to import 'pycuda",
+                         "E0401: Unable to import 'pyopencl'",
+                         "E0401: Unable to import 'torch'",
                          ])
 
     def test_style_test(self):
@@ -56,6 +59,9 @@ class TestCodeStyle(ExtTestCase):
                          "E1101: Module 'torch' has no ",
                          "E1101: Class 'mem_flags' has no ",
                          "W0221: Parameters differ from overridden 'forward'",
+                         "E0401: Unable to import 'pycuda",
+                         "E0401: Unable to import 'pyopencl'",
+                         "E0401: Unable to import 'torch'",
                          ])
 
 

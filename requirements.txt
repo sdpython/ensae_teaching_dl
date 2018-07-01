@@ -5,7 +5,6 @@ guzzle_sphinx_theme
 jyquickhelper
 keras
 Keras-Applications
-pycuda
 pyensae
 pymyinstall
 pyquickhelper
