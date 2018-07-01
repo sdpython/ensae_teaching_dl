@@ -14,7 +14,7 @@ Spark approximatif
     :target: https://travis-ci.org/sdpython/ensae_teaching_dl
     :alt: Build status
 
-.. image:: https://ci.appveyor.com/api/projects/status/chiwkjr9li91qd02?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/b7c2o4fqlaxl0r0a?svg=true
     :target: https://ci.appveyor.com/project/sdpython/ensae_teaching_dl
     :alt: Build Status Windows
 
