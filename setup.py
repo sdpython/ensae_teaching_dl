@@ -17,7 +17,7 @@ history = "HISTORY.rst"
 requirements = None
 
 KEYWORDS = project_var_name + ', Xavier Dupré'
-DESCRIPTION = """Material for teachings about deep learning, mostly in French."""
+DESCRIPTION = """Materials for teachings about deep learning, mostly in French."""
 CLASSIFIERS = [
     'Programming Language :: Python :: 3',
     'Intended Audience :: Developers',

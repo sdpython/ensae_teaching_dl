@@ -32,7 +32,11 @@ class TestCodeStyle(ExtTestCase):
         thi = os.path.abspath(os.path.dirname(__file__))
         src_ = os.path.normpath(os.path.join(thi, "..", "..", "src"))
         check_pep8(src_, fLOG=fLOG,
-                   skip=["Non-iterable value prange"])
+                   skip=["Non-iterable value prange",
+                         "E1101: Module 'torch' has no ",
+                         "E1101: Class 'mem_flags' has no ",
+                         "W0221: Parameters differ from overridden 'forward'",
+                         ])
 
     def test_style_test(self):
         thi = os.path.abspath(os.path.dirname(__file__))
@@ -49,6 +53,9 @@ class TestCodeStyle(ExtTestCase):
                          "Redefining built-in 'input'",
                          "Non-iterable value prange",
                          "Unused import src",
+                         "E1101: Module 'torch' has no ",
+                         "E1101: Class 'mem_flags' has no ",
+                         "W0221: Parameters differ from overridden 'forward'",
                          ])
 
 

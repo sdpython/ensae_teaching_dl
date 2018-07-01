@@ -2,8 +2,8 @@
 .. |gitlogo| image:: _static/git_logo.png
              :height: 20
 
-Spark approximatif
-==================
+Découverte du deep learning
+===========================
 
 **Links:** `github <https://github.com/sdpython/ensae_teaching_dl/>`_,
 `documentation <http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/index.html>`_,
@@ -49,6 +49,7 @@ ou :epkg:`apprentissage profond` sous :epkg:`Python`.
 .. toctree::
     :maxdepth: 1
 
+    chapters/index
     api/index
     i_ex
     all_notebooks

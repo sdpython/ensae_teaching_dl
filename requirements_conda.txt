@@ -3,9 +3,9 @@ Cython
 cytoolz
 jupyter
 matplotlib
-notebook>=5.0.0
+notebook
 numba
-numpy>=1.11.0
+numpy
 Pillow
 scikit-learn
 scipy

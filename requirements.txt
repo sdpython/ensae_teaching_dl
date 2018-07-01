@@ -1,12 +1,16 @@
 chardet
 coverage
+gensim
 guzzle_sphinx_theme
 jyquickhelper
+keras
+Keras-Applications
 pyensae
 pymyinstall
 pyquickhelper>=1.8.2602
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
+tensorflow
 wheel
 

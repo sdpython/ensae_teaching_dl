@@ -2,6 +2,28 @@ dist: trusty
 language: python
 python:
     - "3.6"
+addons:
+-  apt:
+-    packages:
+      - ffmpeg
+      - build-dep
+      - graphviz
+      - libgfortran3
+      - libblas-dev
+      - liblapack-dev
+      - gfortran      
+      - ocl-icd-opencl-dev
+      - libopencl
+      - cuda-gdb-src
+      - cuda 
+      - libgeos-dev
+env:
+  global:
+    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - SEGFAULT_SIGNALS=all
+    - PYTHONUNBUFFERED=True
+    - SDL_VIDEODRIVER=dummy SDL_AUDIODRIVER=disk
+
 before_install:
   - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
@@ -11,5 +33,6 @@ install:
   - pip install -r requirements.txt
 before_script:
   - python setup.py build_ext --inplace
+  - conda install -q pytorch torchvision -c soumith
 script:
   - python setup.py unittests
