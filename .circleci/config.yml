@@ -26,9 +26,11 @@ jobs:
           command: |
                     sudo apt-get install -y texlive
                     sudo apt-get install -y texlive-latex-extra
+                    sudo apt-get install -y texlive-lang-french
+                    sudo apt-get install -y texlive-xetex
           
       - run:
-          name: Install 7z, unrar
+          name: Install 7z
           command: |
                     sudo apt-get install -y p7zip-full
           
@@ -41,7 +43,7 @@ jobs:
           name: Install graphviz
           command: |
                     sudo apt-get install -y graphviz
-          
+
       - run:
           name: install dependencies (1)
           command: |
@@ -56,6 +58,15 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             pip install git+https://github.com/sdpython/sphinxcontrib-images.git --upgrade --no-deps
+            
+      - run:
+          name: install dependencies 5 - torch
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip3 install http://download.pytorch.org/whl/cu91/torch-0.3.1-cp36-cp36m-linux_x86_64.whl
+            pip3 install torchvision
+            
 
       - save_cache:
           paths:

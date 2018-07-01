@@ -22,6 +22,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install pyquickhelper --no-deps"
   - "%PYTHON%\\Scripts\\pip install wcwidth backcall pyensae yahoo_historical qgrid sphinx_bootstrap_theme"
   - "%PYTHON%\\Scripts\\pymy_install3 scikit-learn scipy cffi statsmodels cytoolz Pillow numba llvmlite"
+  - "%PYTHON%\\Scripts\\pymy_install3 pycuda"
   - "set PATH=%PATH%;C:\\projects\\jyquickhelper\\build\\update_modules\\Graphviz\\bin"
 build: off
 

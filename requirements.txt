@@ -5,9 +5,10 @@ guzzle_sphinx_theme
 jyquickhelper
 keras
 Keras-Applications
+pycuda
 pyensae
 pymyinstall
-pyquickhelper>=1.8.2602
+pyquickhelper
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp

@@ -39,8 +39,6 @@ README
 
 *ensae_teaching_dl* contains material for teachings about deep learning.
 
-*not ready*
-
 **Links:**
 
 * `GitHub/ensae_teaching_dl <https://github.com/sdpython/ensae_teaching_dl/>`_
