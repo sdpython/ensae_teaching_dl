@@ -29,7 +29,7 @@ except ImportError:
 class TestNotebook1236Coverage201711torchCIFAR(unittest.TestCase):
 
     def setUp(self):
-        add_missing_development_version(["pymyinstall", "pyensae", "pymmails", "jyquickhelper"],
+        add_missing_development_version(["pymyinstall", "pyensae", "jyquickhelper"],
                                         __file__, hide=True)
 
     def a_test_notebook_runner(self, name, folder, valid=None, copy_files=None):

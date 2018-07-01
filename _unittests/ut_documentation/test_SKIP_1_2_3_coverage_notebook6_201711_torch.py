@@ -30,7 +30,7 @@ import src.ensae_teaching_dl
 class TestNotebook1236Coverage201711torch(ExtTestCase):
 
     def setUp(self):
-        add_missing_development_version(["pymyinstall", "pyensae", "pymmails", "jyquickhelper"],
+        add_missing_development_version(["pymyinstall", "pyensae", "jyquickhelper"],
                                         __file__, hide=True)
 
     def test_notebook_torch_IRIS(self):

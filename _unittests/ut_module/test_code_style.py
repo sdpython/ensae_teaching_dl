@@ -63,6 +63,7 @@ class TestCodeStyle(ExtTestCase):
                          "E0401: Unable to import 'pycuda",
                          "E0401: Unable to import 'pyopencl'",
                          "E0401: Unable to import 'torch'",
+                         "E1101: Instance of 'Variable' has no 'data' member",
                          ])
 
 
