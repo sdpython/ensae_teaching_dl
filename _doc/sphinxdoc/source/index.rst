@@ -2,7 +2,7 @@
 .. |gitlogo| image:: _static/git_logo.png
              :height: 20
 
-Découverte du deep learning
+DÃ©couverte du deep learning
 ===========================
 
 **Links:** `github <https://github.com/sdpython/ensae_teaching_dl/>`_,
