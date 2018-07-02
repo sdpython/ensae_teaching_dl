@@ -18,11 +18,14 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 --set=pyquickhelper"
   - "%PYTHON%\\Scripts\\pymy_install3 numba scikit-image scikit-learn statsmodels pillow"
   - "%PYTHON%\\Scripts\\pymy_install3 torch"
+  - "%PYTHON%\\Scripts\\pip install torchvision"
   - "%PYTHON%\\Scripts\\pymy_install3 --task=tool --source=zip graphviz"
   - "%PYTHON%\\Scripts\\pip install pyquickhelper --no-deps"
-  - "%PYTHON%\\Scripts\\pip install wcwidth backcall pyensae yahoo_historical qgrid sphinx_bootstrap_theme"
+  - "%PYTHON%\\Scripts\\pip install wcwidth backcall pyensae sphinx_bootstrap_theme"
   - "%PYTHON%\\Scripts\\pymy_install3 scikit-learn scipy cffi statsmodels cytoolz Pillow numba llvmlite"
   - "%PYTHON%\\Scripts\\pymy_install3 pycuda"
+  - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
+  - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
   - "set PATH=%PATH%;C:\\projects\\jyquickhelper\\build\\update_modules\\Graphviz\\bin"
 build: off
 

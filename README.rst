@@ -9,7 +9,7 @@ README
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/b7c2o4fqlaxl0r0a?svg=true
-    :target: https://ci.appveyor.com/project/sdpython/ensae_teaching_dl
+    :target: https://ci.appveyor.com/project/sdpython/ensae-teaching-dl
     :alt: Build Status Windows
 
 .. image:: https://circleci.com/gh/sdpython/ensae_teaching_dl/tree/master.svg?style=svg

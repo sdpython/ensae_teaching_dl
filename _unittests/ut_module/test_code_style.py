@@ -40,6 +40,7 @@ class TestCodeStyle(ExtTestCase):
                          "E0401: Unable to import 'pyopencl'",
                          "E0401: Unable to import 'torch'",
                          "E1101: Instance of 'Variable' has no 'data' member",
+                         "E0401: Unable to import 'keras",
                          ])
 
     def test_style_test(self):
@@ -64,6 +65,7 @@ class TestCodeStyle(ExtTestCase):
                          "E0401: Unable to import 'pyopencl'",
                          "E0401: Unable to import 'torch'",
                          "E1101: Instance of 'Variable' has no 'data' member",
+                         "E0401: Unable to import 'keras",                         
                          ])
 
 
