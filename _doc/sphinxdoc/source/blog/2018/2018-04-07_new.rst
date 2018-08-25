@@ -1,0 +1,55 @@
+
+.. blogpost::
+    :title: Ajout de références modules
+    :keywords: nmt
+    :date: 2018-04-05
+    :categories: biblio
+
+    Dans :ref:`l-ml2a-deep-gan` :
+
+    * `Synthesizing Programs for Images using Reinforced Adversarial Learning <https://arxiv.org/abs/1804.01118>`_
+    * `Flipped-Adversarial AutoEncoders <https://arxiv.org/abs/1802.04504>`_
+
+    Dans :ref:`l-ml2a-resolu-sketch` :
+
+    * `SketchMate: Deep Hashing for Million-Scale Human Sketch Retrieval <https://arxiv.org/abs/1804.01401>`_
+
+    Dans :ref:`l-ml2aresolu-socnet` :
+
+    * `Real-time Detection of Content Polluters in Partially Observable Twitter Networks <https://arxiv.org/abs/1804.01235>`_
+
+    Dans :ref:`l-ml2a-resolu-detpartobj` :
+
+    * `Structured Set Matching Networks for One-Shot Part Labeling <https://arxiv.org/abs/1712.01867>`_
+
+    Dans :ref:`l-ml2a-resolu-detexpr` :
+
+    * `Prediction and Localization of Student Engagement in the Wild <https://arxiv.org/abs/1804.00858>`_
+
+    Dans :ref:`l-ml2a-resolu-detobj` :
+
+    * `Automatic Salient Object Detection for Panoramic Images Using Region Growing and Fixation Prediction Model <https://arxiv.org/abs/1710.04071>`_
+
+    Dans :ref:`l-ml2a-resolu-detobj3d` :
+
+    * `PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space <https://arxiv.org/abs/1706.02413>`_
+    * `3DContextNet: K-d Tree Guided Hierarchical Learning of Point Clouds Using Local and Global Contextual Cues <https://arxiv.org/abs/1711.11379>`_
+
+    Inclassables :
+
+    * `Feedback GAN (FBGAN) for DNA: a Novel Feedback-Loop Architecture for Optimizing Protein Functions <https://arxiv.org/abs/1804.01694>`_
+    * `Hidden Talents of the Variational Autoencoder <https://arxiv.org/abs/1706.05148>`_ :
+      les auto-encoders sont en quelque sorte des :epkg:`ACP` non linéaire,
+      l'article le décrit de façon plus formelle.
+    * `ScreenerNet: Learning Self-Paced Curriculum for Deep Neural Networks <https://arxiv.org/abs/1801.00904>`_ :
+      l'article essaye d'améliorer l'apprentissage d'un réseau de neurones
+      en pondérant les observations de la base d'apprentissage.
+
+    Un module :
+
+    * :epkg:`thorpy` qui implémente des fenêtres façon
+      :epkg:`tkinter` pour :epkg:`pygame`
+
+    Et d'autres que je n'ai pas encore triés :
+
+    * `Framework for evaluation of sound event detection in web videos <https://arxiv.org/abs/1711.00804>`_
