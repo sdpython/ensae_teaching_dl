@@ -47,5 +47,6 @@ epkg_dictionary['GIL'] = 'http://www.xavierdupre.fr/app/teachpyx/helpsphinx/note
 epkg_dictionary['itérateur'] = 'https://fr.wikipedia.org/wiki/It%C3%A9rateur'
 epkg_dictionary['map/reduce'] = 'https://fr.wikipedia.org/wiki/MapReduce'
 epkg_dictionary['numba'] = 'https://numba.pydata.org/'
+epkg_dictionary['pytorch'] = 'https://pytorch.org/'
 epkg_dictionary['sqlite3'] = "https://docs.python.org/3.6/library/sqlite3.html"
 epkg_dictionary['SQL'] = 'https://fr.wikipedia.org/wiki/Structured_Query_Language'
