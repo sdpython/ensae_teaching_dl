@@ -42,14 +42,20 @@ class TestModulesOpenCl(unittest.TestCase):
 
         import numpy as np
         import pyopencl as cl
-
+        from pyopencl import get_platforms
+        for plat in get_platforms():
+            fLOG(plat)
+            for dev in plat.get_devices():
+                fLOG("   ", dev)
         a_np = np.random.rand(50000).astype(np.float32)
         b_np = np.random.rand(50000).astype(np.float32)
 
         # execute cl.create_some_context() from a console
         # and set up the following environment variable
-        os.environ["PYOPENCL_CTX"] = '0:1'
-        ctx = cl.create_some_context()
+        # 0:1 means first platform, second device
+        # os.environ["PYOPENCL_CTX"] = '0:1'
+        os.environ["PYOPENCL_COMPILER_OUTPUT"] = "1"
+        ctx = cl.create_some_context(interactive=False)
         queue = cl.CommandQueue(ctx)
 
         mf = cl.mem_flags

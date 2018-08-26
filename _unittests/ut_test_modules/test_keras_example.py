@@ -5,6 +5,7 @@
 import sys
 import os
 import unittest
+import warnings
 from pyquickhelper.loghelper.flog import fLOG
 from pyquickhelper.pycode import is_travis_or_appveyor
 
@@ -35,7 +36,15 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
             # it requires keras
             return
 
-        from src.ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict
+        try:
+            from src.ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict
+        except SyntaxError as e:
+            if sys.version_info[:2] == (3, 7):
+                warnings.warn(
+                    "Tensorflow still not available on python 3.7: {0}".format(e))
+                return
+            else:
+                raise
         fLOG("data")
         (X_train, Y_train), (X_test, Y_test) = keras_mnist_data()
         fLOG("model", Y_train.shape)

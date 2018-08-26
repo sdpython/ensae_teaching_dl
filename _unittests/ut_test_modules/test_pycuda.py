@@ -27,6 +27,7 @@ except ImportError:
 
 class TestModulesCuda(unittest.TestCase):
 
+    @unittest.skipIf(is_travis_or_appveyor() is not None, "nopycuda on CI")
     def test_cuda(self):
         fLOG(__file__, self._testMethodName, OutputPrint=__name__ == "__main__")
 
@@ -36,11 +37,11 @@ class TestModulesCuda(unittest.TestCase):
                 warnings.warn("Missing DLL: " + dll)
                 return
 
-        if is_travis_or_appveyor():
-            # skipping on automated build
+        try:
+            import pycuda.driver as drv
+        except ImportError as e:
+            warnings.warn("No pycuda installed: {0}".format(e))
             return
-
-        import pycuda.driver as drv
         import numpy
 
         from pycuda.compiler import SourceModule
