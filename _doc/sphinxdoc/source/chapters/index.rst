@@ -18,7 +18,8 @@ Notebooks
     210_Convolution_MNIST
     300_Convolution_CIFAR10
 
-All notebooks except the first one were written by
+Tous les notebooks excepté le premier
+ont été écrits par
 `Matthieu Bizien <http://tantion.com/>`_.
 
 Deep learning en vrac
