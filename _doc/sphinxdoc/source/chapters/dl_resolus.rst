@@ -251,6 +251,11 @@ Segmentation d'images
 * `DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs <https://arxiv.org/abs/1606.00915>`_
 * `Rethinking Atrous Convolution for Semantic Image Segmentation <https://arxiv.org/pdf/1706.05587.pdf>`_
 
+Suivis d'objets
++++++++++++++++
+
+* `End-to-end Active Object Tracking and Its Real-world Deployment via Reinforcement Learning <https://arxiv.org/abs/1808.03405>`_
+
 Texte / Traduction
 ++++++++++++++++++
 
