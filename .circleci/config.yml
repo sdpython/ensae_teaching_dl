@@ -61,14 +61,6 @@ jobs:
             pip install -r requirements_conda.txt
 
       - run:
-          name: install dependencies (2)
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-            pip install git+https://github.com/sdpython/sphinxcontrib-images.git --upgrade --no-deps
-            
-      - run:
           name: install dependencies 5 - torch
           command: |
             python3 -m venv venv
