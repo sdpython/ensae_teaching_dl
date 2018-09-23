@@ -1,28 +1,23 @@
 """
 @file
-@brief Taken from `mnist_cnn.py <https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py>`_
+@brief Taken from `mnist_cnn.py <https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py>`_.
 
-Trains a simple convnet on the MNIST dataset.
+Trains a simple convolution network on the :epkg:`MNIST` dataset.
 
 Gets to 99.25% test accuracy after 12 epochs
 (there is still a lot of margin for parameter tuning).
 16 seconds per epoch on a GRID K520 GPU.
 """
-from keras.datasets import mnist
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.layers import Convolution2D, MaxPooling2D
-from keras.utils import np_utils
-from keras import backend as K
-from pyquickhelper.loghelper import noLOG
-
-# numpy.random.seed(1337)  # for reproducibility
 
 
 def keras_mnist_data():
     """
-    retrieve the MNIST database for keras
+    Retrieves the :epkg:`MNIST` database for :epkg:`keras`.
     """
+    from keras.datasets import mnist
+    from keras.utils import np_utils
+    from keras import backend as K
+    
     # the data, shuffled and split between train and test sets
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
     img_rows, img_cols = 28, 28    # should be cmputed from the data
@@ -43,18 +38,22 @@ def keras_mnist_data():
     nb_classes = len(set(y_train))
     Y_train = np_utils.to_categorical(y_train, nb_classes)
     Y_test = np_utils.to_categorical(y_test, nb_classes)
-
     return (X_train, Y_train), (X_test, Y_test)
 
 
-def keras_build_mnist_model(nb_classes, fLOG=noLOG):
+def keras_build_mnist_model(nb_classes, fLOG=None):
     """
-    build a CNN for MNIST with keras
+    Builds a :epkg:`CNN` for :epkg:`MNIST` with :epkg:`keras`.
 
     @param      nb_classes      number of classes
     @param      fLOG            logging function
     @return                     the model
     """
+    from keras.models import Sequential
+    from keras.layers import Dense, Dropout, Activation, Flatten
+    from keras.layers import Convolution2D, MaxPooling2D
+    from keras import backend as K
+    
     model = Sequential()
 
     nb_filters = 32
@@ -105,17 +104,21 @@ def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
     @param      nb_classes  nb_classes
     @param      nb_epoch    number of iterations
     @param      fLOG        logging function
+    @return                 model
     """
+    # numpy.random.seed(1337)  # for reproducibility
+
     if nb_classes is None:
         nb_classes = Y_train.shape[1]
         fLOG("[keras_fit] nb_classes=%d" % nb_classes)
     model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch,
               verbose=1, validation_data=(X_test, Y_test))
+    return model
 
 
 def keras_predict(model, X_test, Y_test):
     """
-    Prediction with a :epkg:`keras` model.
+    Computes the predictions with a :epkg:`keras` model.
 
     @param      model       :epkg:`keras` model
     @param      X_test      test features
