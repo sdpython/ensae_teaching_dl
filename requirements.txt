@@ -7,10 +7,11 @@ keras
 Keras-Applications
 pyensae
 pymyinstall
-pyquickhelper
+pyquickhelper>=2.8.2814
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 tensorflow
+torchivision
 wheel
 

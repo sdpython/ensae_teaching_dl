@@ -2,7 +2,7 @@ dist: xenial
 sudo: true
 language: python
 python:
-    - "3.6"
+    - "3.7"
 addons:
 -  apt:
 -    packages:
@@ -32,8 +32,6 @@ install:
   - sudo apt-get install -qq gcc-6 g++-6
   - pip install -r requirements_conda.txt
   - pip install -r requirements.txt
-  - pip install -q http://download.pytorch.org/whl/cu91/torch-0.4.0-cp36-cp36m-linux_x86_64.whl
-  - pip install torchvision  
 before_script:
   - python setup.py build_ext --inplace
 script:

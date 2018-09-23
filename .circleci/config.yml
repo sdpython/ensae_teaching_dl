@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.5
+      - image: circleci/python:3.7.0
     
     working_directory: ~/repo
     
@@ -59,14 +59,6 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements_conda.txt
-
-      - run:
-          name: install dependencies 5 - torch
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip3 install -q http://download.pytorch.org/whl/cu91/torch-0.4.0-cp36-cp36m-linux_x86_64.whl
-            pip3 install torchvision
 
       - save_cache:
           paths:
