@@ -12,6 +12,6 @@ sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 # tensorflow
-torchivision
+torchvision
 wheel
 
