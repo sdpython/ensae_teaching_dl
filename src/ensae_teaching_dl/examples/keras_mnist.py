@@ -17,7 +17,7 @@ def keras_mnist_data():
     from keras.datasets import mnist
     from keras.utils import np_utils
     from keras import backend as K
-    
+
     # the data, shuffled and split between train and test sets
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
     img_rows, img_cols = 28, 28    # should be cmputed from the data
@@ -53,7 +53,7 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     from keras.layers import Dense, Dropout, Activation, Flatten
     from keras.layers import Convolution2D, MaxPooling2D
     from keras import backend as K
-    
+
     model = Sequential()
 
     nb_filters = 32
@@ -91,7 +91,7 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
 
 
 def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
-              nb_classes=None, nb_epoch=12, fLOG=noLOG):
+              nb_classes=None, nb_epoch=12, fLOG=None):
     """
     Fits a :epkg:`keras` model.
 
@@ -110,7 +110,8 @@ def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
 
     if nb_classes is None:
         nb_classes = Y_train.shape[1]
-        fLOG("[keras_fit] nb_classes=%d" % nb_classes)
+        if fLOG:
+            fLOG("[keras_fit] nb_classes=%d" % nb_classes)
     model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch,
               verbose=1, validation_data=(X_test, Y_test))
     return model
