@@ -7,7 +7,7 @@ keras
 Keras-Applications
 pyensae
 pymyinstall
-pyquickhelper>=2.8.2814
+pyquickhelper>=1.8.2814
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
