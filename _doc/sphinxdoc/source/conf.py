@@ -50,3 +50,5 @@ epkg_dictionary['numba'] = 'https://numba.pydata.org/'
 epkg_dictionary['pytorch'] = 'https://pytorch.org/'
 epkg_dictionary['sqlite3'] = "https://docs.python.org/3.6/library/sqlite3.html"
 epkg_dictionary['SQL'] = 'https://fr.wikipedia.org/wiki/Structured_Query_Language'
+epkg_dictionary['Tensorflow'] = 'https://www.tensorflow.org/'
+epkg_dictionary['TensorFlow'] = 'https://www.tensorflow.org/'
