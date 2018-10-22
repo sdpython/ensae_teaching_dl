@@ -32,3 +32,4 @@ Generative Adversarial Network (GAN)
 * `generative-models <https://github.com/wiseodd/generative-models>`_ :
   programme sur une grande variété de GAN (Vanilla, Conditional, f-GAN, ...)
   avec :epkg:`tensorflow` et :epkg:`pytorch`
+* `Generative Adversarial Networks (GANs) in 50 lines of code (PyTorch) <https://medium.com/@devnag/generative-adversarial-networks-gans-in-50-lines-of-code-pytorch-e81b79659e3f>`_
