@@ -1,0 +1,17 @@
+
+.. blogpost::
+    :title: Deep model from one framework to another
+    :keywords: deep learning, conversion
+    :date: 2018-10-24
+    :categories: modules
+
+    I discovered the python module
+    `MMdnn <https://github.com/Microsoft/MMdnn>`_
+    which implements many conversions between frameworks,
+    from :epkg:`tensorflow` to :epkg:`pytorch` and many others
+    (see `tested models <https://github.com/Microsoft/MMdnn#tested-models>`_).
+    It does propose a visualizer too:
+    `MMDNN Visualizer <http://mmdnn.eastasia.cloudapp.azure.com:8080/>`_.
+    And many models can be downloaded:
+    `Model Collection <https://github.com/Microsoft/MMdnn/blob/master/mmdnn/models/README.md#model-collection>`_.
+    Available on `PyPi <https://pypi.org/project/mmdnn/#description>`_.
