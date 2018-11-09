@@ -1,0 +1,8 @@
+
+.. blogpost::
+    :title: Notebooks sur le deep learning par le créateur de Keras
+    :keywords: deep learning, keras, Chollet
+    :date: 2018-11-07
+    :categories: lectures
+
+    `Companion Jupyter notebooks for the book "Deep Learning with Python <https://github.com/fchollet/deep-learning-with-python-notebooks>`_
