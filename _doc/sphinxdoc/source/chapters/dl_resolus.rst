@@ -7,7 +7,13 @@ Galleries de problèmes résolus ou presque
 
 Cette rubrique étend la liste des références avec des articles
 exposant des méthodes de machine learning appliquées à des problèmes
-précis.
+précis. Il est difficile de garder une liste à jour
+tant les avancées sont rapides et dans de nombreux de domaines.
+Le site
+`daily-paper-computer-vision <https://github.com/amusi/daily-paper-computer-vision>`_
+recense régulièrement des articles sur des applications du
+deep learning, le site est en chinois mais les articles
+sont en anglais.
 
 .. contents::
     :local:

@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: Quelques liens, lectures
+    :keywords: bert, reinforcement learning
+    :date: 2018-11-30
+    :categories: lectures
+
+    * `Deep Reinforcement Learning Course <https://github.com/simoninithomas/Deep_reinforcement_learning_Course>`_
+    * `bert <https://github.com/google-research/bert>`_
+    * `Python Deep Learning Projects <https://github.com/goodrahstar/Python-Deep-Learning-Projects>`_
+    * `daily-paper-computer-vision <https://github.com/amusi/daily-paper-computer-vision>`_
