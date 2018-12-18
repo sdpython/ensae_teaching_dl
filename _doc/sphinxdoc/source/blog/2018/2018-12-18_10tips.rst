@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: 10 choses à savoir sur le deep learning
+    :keywords: tips, deep learning
+    :date: 2018-12-18
+    :categories: lectures
+
+    Il n'existe pas encore de théorie sur le deep learning qui se différence
+    du machine learning classique. Il existe en revanche quelques astuces
+    utiles pour apprendre des modèles. En voici 10 toutes à connaître :
+    `The 10 Deep Learning Methods AI Practitioners Need to Apply <https://medium.com/cracking-the-data-science-interview/the-10-deep-learning-methods-ai-practitioners-need-to-apply-885259f402c1>`_.
