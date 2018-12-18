@@ -70,6 +70,7 @@ Compter les objets dans une image
 +++++++++++++++++++++++++++++++++
 
 * `Fully Convolutional Crowd Counting On Highly Congested Scenes <https://arxiv.org/pdf/1612.00220.pdf>`_
+* `Research on Methods for Counting the Number of People in a Video Stream Using OpenCV <https://www.codeproject.com/Articles/1264037/Research-on-Methods-for-Counting-the-Number-of-P-2>`_
 
 .. _l-ml2a-resolu-detexpr:
 
@@ -166,6 +167,7 @@ s'il s'agit d'images prises par un appareil photos ou d'images médicales.
   reconnaissance de plaques d'immatriculation, pas vraiment du deep learning
 * `Fully Convolutional Networks for Semantic Segmentation <https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf>`_
 * `Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing <https://arxiv.org/pdf/1612.02699.pdf>`_
+* `Best-Buddies Similarity for Robust Template Matching <https://people.csail.mit.edu/talidekel/papers/BBS_CVPR15.pdf>`_
 
 Histoire
 ++++++++
