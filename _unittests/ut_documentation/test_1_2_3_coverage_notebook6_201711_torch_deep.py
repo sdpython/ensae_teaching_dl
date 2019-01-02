@@ -8,7 +8,7 @@ import os
 import unittest
 import shutil
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
+from pyquickhelper.pycode import get_temp_folder, add_missing_development_version, skipif_circleci
 from pyquickhelper.ipythonhelper import execute_notebook_list, execute_notebook_list_finalize_ut, get_additional_paths
 
 
@@ -59,6 +59,7 @@ class TestNotebook1236Coverage201711torchCIFAR(unittest.TestCase):
             temp, keepnote, additional_path=add_path, valid=valid)
         execute_notebook_list_finalize_ut(res, fLOG=fLOG, dump=thismodule)
 
+    @skipif_circleci("Too long with no output, probably")
     def test_notebook_torch_CIFAR(self):
         fLOG(
             __file__,
