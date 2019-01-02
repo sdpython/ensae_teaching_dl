@@ -19,10 +19,11 @@ before_script:
   - set KERAS_BACKEND=tensorflow
 
 script:
-  - { CMD: "$PYINT -u setup.py unittests -g \".*MODULE.*\"", NAME: "UT" }
+  - { CMD: "$PYINT -u setup.py unittests -g \".*((MODULE)|(201711_torch)).*\"", NAME: "UT" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*((keras)).*\"", NAME: "UT_KERAS", TIMEOUT: 7200 }
   - { CMD: "$PYINT -u setup.py unittests -e \".*((deep)).*\"", NAME: "UT_DEEP2", TIMEOUT: 7200 }
   - { CMD: "$PYINT -u setup.py unittests -e \".*MODULE.*\"", NAME: "UT_MODULE" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*201711_torch.*\"", NAME: "UT_TORCH", TIMEOUT: 2400 }
 
 after_script:
   - $PYINT -u setup.py bdist_wheel
