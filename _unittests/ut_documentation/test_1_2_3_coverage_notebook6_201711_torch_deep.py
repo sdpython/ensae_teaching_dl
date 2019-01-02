@@ -33,7 +33,8 @@ class TestNotebook1236Coverage201711torchCIFAR(unittest.TestCase):
                                         __file__, hide=True)
 
     def a_test_notebook_runner(self, name, folder, valid=None, copy_files=None):
-        temp = get_temp_folder(__file__, "temp_notebook_123_{0}".format(name))
+        temp = get_temp_folder(
+            __file__, "temp_notebook_123_torch_{0}".format(name))
         doc = os.path.join(temp, "..", "..", "..", "_doc", "notebooks", folder)
         if not os.path.exists(doc):
             raise FileNotFoundError(doc)
