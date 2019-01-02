@@ -8,7 +8,7 @@ import os
 import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.ipythonhelper import test_notebook_execution_coverage
-from pyquickhelper.pycode import add_missing_development_version, ExtTestCase
+from pyquickhelper.pycode import add_missing_development_version, ExtTestCase, skipif_circleci
 
 try:
     import src
@@ -33,6 +33,7 @@ class TestNotebook1236Coverage201711torch_perceptron_mnist(ExtTestCase):
         add_missing_development_version(["pymyinstall", "pyensae", "jyquickhelper"],
                                         __file__, hide=True)
 
+    @skipif_circleci("Too long with no output, probably")
     def test_notebook_torch_perceptron_mnist(self):
         fLOG(
             __file__,
