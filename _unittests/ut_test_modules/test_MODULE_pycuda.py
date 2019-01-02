@@ -45,13 +45,15 @@ class TestModulesCuda(unittest.TestCase):
         import numpy
 
         from pycuda.compiler import SourceModule
+        options = None if sys.platform.startswith(
+            "win") else ["-ccbin", "clang-3.8"]
         mod = SourceModule("""
         __global__ void multiply_them(float *dest, float *a, float *b)
         {
           const int i = threadIdx.x;
           dest[i] = a[i] * b[i];
         }
-        """)
+        """, options=options)
 
         multiply_them = mod.get_function("multiply_them")
 
