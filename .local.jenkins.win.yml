@@ -17,9 +17,10 @@ before_script:
   - python -u setup.py build_ext --inplace
   - set KERAS_BACKEND=tensorflow
 script:
-  - { CMD: "python -u setup.py unittests", NAME: "UT" }
+  - { CMD: "python -u setup.py unittests -g .*MODULE.*", NAME: "UT" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e \".*((keras)).*\"", NAME: "UT_KERAS", TIMEOUT: 7200 }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e \".*((deep)).*\"", NAME: "UT_DEEP2", TIMEOUT: 7200 }
+  - { CMD: "python -X faulthandler -u setup.py unittests -e .*MODULE.*", NAME: "UT_MODULE" }
 after_script:
   - python -u setup.py bdist_wheel
   - if [ ${DIST} != "conda" and ${NAME} == "UT" ] then copy dist\*.whl {{root_path}}\..\..\local_pypi\local_pypi_server fi
