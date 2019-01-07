@@ -5,7 +5,25 @@
 Découverte du deep learning
 ===========================
 
-**Links:** `github <https://github.com/sdpython/ensae_teaching_dl/>`_,
+Lectures, notebooks, helpers pour faire du :epkg:`deep learning`
+ou :epkg:`apprentissage profond` sous :epkg:`Python`.
+Le deep learning signifie aussi des calculs intensifs et des modules qui
+utilisent un compilateur C++ pour optimiser les calculs
+et le GPU si vous en avez.
+Vous pouvez tester votre installation avec le notebook
+:ref:`mldeeppythonrst` ou encore
+`Keras-TensorFlow-GPU-Windows-Installation <https://github.com/antoniosehk/keras-tensorflow-windows-installation>`_.
+
+.. toctree::
+    :maxdepth: 1
+
+    chapters/index
+    api/index
+    i_ex
+    all_notebooks
+    i_index
+
+`github <https://github.com/sdpython/ensae_teaching_dl/>`_,
 `documentation <http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/index.html>`_,
 :ref:`l-README`,
 :ref:`blog <ap-main-0>`
@@ -42,24 +60,6 @@ Découverte du deep learning
 .. image:: nbcov.png
     :target: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
-
-Lectures, notebooks, helpers pour faire du :epkg:`deep learning`
-ou :epkg:`apprentissage profond` sous :epkg:`Python`.
-Le deep learning signifie aussi des calculs intensifs et des modules qui
-utilisent un compilateur C++ pour optimiser les calculs
-et le GPU si vous en avez.
-Vous pouvez tester votre installation avec le notebook
-:ref:`mldeeppythonrst` ou encore
-`Keras-TensorFlow-GPU-Windows-Installation <https://github.com/antoniosehk/keras-tensorflow-windows-installation>`_.
-
-.. toctree::
-    :maxdepth: 1
-
-    chapters/index
-    api/index
-    i_ex
-    all_notebooks
-    i_index
 
 +----------------------+---------------------+---------------------+--------------------+------------------------+------------------------------------------------+
 | :ref:`l-modules`     |  :ref:`l-functions` | :ref:`l-classes`    | :ref:`l-methods`   | :ref:`l-staticmethods` | :ref:`l-properties`                            |
