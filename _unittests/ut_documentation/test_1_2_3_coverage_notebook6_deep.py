@@ -8,7 +8,8 @@ import os
 import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.ipythonhelper import test_notebook_execution_coverage
-from pyquickhelper.pycode import add_missing_development_version, ExtTestCase, skipif_travis, skipif_circleci
+from pyquickhelper.pycode import add_missing_development_version, ExtTestCase
+from pyquickhelper.pycode import skipif_travis, skipif_circleci, skipif_appveyor
 
 try:
     import src
@@ -35,6 +36,7 @@ class TestNotebook1236Coverage_deep(ExtTestCase):
 
     @skipif_circleci("No module named 'tensorflow'")
     @skipif_travis("No module named 'tensorflow'")
+    @skipif_appveyor("No module named 'tensorflow'")
     def test_notebook_torch_perceptron_convolution_mnist(self):
         fLOG(
             __file__,
