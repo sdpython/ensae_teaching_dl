@@ -27,7 +27,7 @@ except ImportError:
 import src.ensae_teaching_dl
 
 
-class TestNotebook1236Coverage201711torch(ExtTestCase):
+class TestNotebook1236Coverage110(ExtTestCase):
 
     def setUp(self):
         add_missing_development_version(["pymyinstall", "pyensae", "jyquickhelper"],
@@ -42,7 +42,7 @@ class TestNotebook1236Coverage201711torch(ExtTestCase):
         self.assertTrue(src.ensae_teaching_dl is not None)
         folder = os.path.join(os.path.dirname(__file__),
                               "..", "..", "_doc", "notebooks", "101")
-        test_notebook_execution_coverage(__file__, "Logistic_IRIS", folder,
+        test_notebook_execution_coverage(__file__, "110_Perceptron_Iris", folder,
                                          this_module_name="ensae_teaching_dl", fLOG=fLOG)
 
 
