@@ -53,7 +53,7 @@ class TestModulesCuda(unittest.TestCase):
           const int i = threadIdx.x;
           dest[i] = a[i] * b[i];
         }
-        """, options=options)
+        """, options=options, cache_dir=".")
 
         multiply_them = mod.get_function("multiply_them")
 
