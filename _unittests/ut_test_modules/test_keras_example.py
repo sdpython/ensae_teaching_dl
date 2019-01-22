@@ -7,7 +7,6 @@ import os
 import unittest
 import warnings
 from pyquickhelper.loghelper.flog import fLOG
-from pyquickhelper.pycode import is_travis_or_appveyor
 
 
 try:
@@ -31,10 +30,6 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-
-        if is_travis_or_appveyor():
-            # it requires keras
-            return
 
         try:
             from src.ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict

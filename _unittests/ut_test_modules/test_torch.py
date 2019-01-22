@@ -8,7 +8,6 @@ import unittest
 import warnings
 import numpy as np
 from pyquickhelper.loghelper.flog import fLOG
-from pyquickhelper.pycode import is_travis_or_appveyor
 
 
 try:
@@ -32,10 +31,6 @@ class TestSkipExampleTorch(unittest.TestCase):
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-
-        if is_travis_or_appveyor():
-            # it requires latex
-            return
 
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", ImportWarning)
