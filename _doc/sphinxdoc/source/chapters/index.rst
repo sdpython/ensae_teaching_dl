@@ -29,6 +29,7 @@ Deep learning en vrac
     :maxdepth: 1
 
     deep_learning_en_detail
+    deep_machine_theorique
     deep_reseaux_de_neurones_et_deep_learning
     deep_transfer_learning
     deep_generation_images
