@@ -35,6 +35,7 @@ Deep learning en vrac
     deep_apprentissage_sans_labels
     deep_compression_de_modeles_de_deep_learning
     deep_generative_adversarial_network_gan
+    deep_auto_ml
 
 Images
 ++++++
