@@ -23,7 +23,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install pyquickhelper --no-deps"
   - "%PYTHON%\\Scripts\\pip install wcwidth backcall pyensae sphinx_bootstrap_theme"
   - "%PYTHON%\\Scripts\\pymy_install3 scikit-learn scipy cffi statsmodels cytoolz Pillow numba llvmlite"
-  - "%PYTHON%\\Scripts\\pymy_install3 pycuda"
+  - "%PYTHON%\\Scripts\\pymy_install3 pycuda tensorflow"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
   - "%PYTHON%\\Scripts\\pip install http://download.pytorch.org/whl/cpu/torch-0.4.1-cp37-cp37m-win_amd64.whl"
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
