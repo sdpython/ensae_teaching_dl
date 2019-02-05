@@ -57,6 +57,8 @@ mathdef_link_only = True
 epkg_dictionary.update({
     'apprentissage profond': 'https://fr.wikipedia.org/wiki/Apprentissage_profond',
     'auto-keras': 'https://autokeras.com/',
+    'chainer': 'https://chainer.org/',
+    'cupy': 'https://cupy.chainer.org/',
     'deep learning': 'https://en.wikipedia.org/wiki/Deep_learning',
     'ENSAE': 'http://www.ensae.fr/',
     'GIL': 'http://www.xavierdupre.fr/app/teachpyx/helpsphinx/notebooks/gil_example.html',
@@ -64,9 +66,11 @@ epkg_dictionary.update({
     'keras': 'https://keras.io/',
     'map/reduce': 'https://fr.wikipedia.org/wiki/MapReduce',
     'numba': 'https://numba.pydata.org/',
+    'pycuda': 'https://documen.tician.de/pycuda/',
     'pytorch': 'https://pytorch.org/',
     'sqlite3': "https://docs.python.org/3.6/library/sqlite3.html",
     'SQL': 'https://fr.wikipedia.org/wiki/Structured_Query_Language',
     'Tensorflow': 'https://www.tensorflow.org/',
     'TensorFlow': 'https://www.tensorflow.org/',
+    'tvm': 'https://docs.tvm.ai/index.html',
 })

@@ -1,0 +1,32 @@
+
+.. blogpost::
+    :title: Optimisation de calcul sur GPU
+    :keywords: tvm
+    :date: 2019-02-03
+    :categories: GPU
+
+    `tvm <https://tvm.ai/>`_ est une librarie de calcul
+    GPU hébergée sur `github/tvm <https://github.com/dmlc/tvm>`_
+    et démarré par les concepteurs de
+    `xgboost <https://github.com/dmlc/xgboost>`_.
+    C'est une librairie de calcul sur GPU un peu
+    comme :epkg:`cupy` avec un petit bout de
+    :epkg:`chainer`.
+
+    Le projet :epkg:`tvm` dit s'être inspiré entre autres
+    de `Halide <https://github.com/halide/Halide>`_.
+    La lecture des présentations citées sur la première
+    page de la `documentation <http://halide-lang.org/>`_
+    sont intéressantes et donnent des idées sur la façon
+    de coder en GPU.
+
+    Pour résumer, les libraires comme :epkg:`tvm` optimisent
+    les calculs GPU par rapport à d'autres plus bas
+    niveau comme :epkg:`pycuda`. Ces librairies agencent
+    les calculs de façon efficace dans la plupart des cas
+    mais pas forcément de façon optimale. En gros, on code
+    beaucoup plus vite pour une performance plus que raisonnable
+    même si ça ne produit pas nécessairement le code optimal.
+
+    Il y a beaucoup de mouvements dans le domaine du
+    GPU en ce moment.

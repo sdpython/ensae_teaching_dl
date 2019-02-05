@@ -7,7 +7,6 @@
 Deep Learning Théorique
 +++++++++++++++++++++++
 
-
 *Lectures*
 
 * `Lecture notes on mathematics for deep neural networks <http://pub.math.leidenuniv.nl/~schmidthieberaj/publications/Script.pdf>`_,
@@ -16,4 +15,4 @@ Deep Learning Théorique
 * `Deep Learning Methods and Applications <https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/DeepLearning-NowPublishing-Vol7-SIG-039.pdf>`_,
   Li Deng and Dong Yu
 * `Deep Learning <http://www.deeplearningbook.org/front_matter.pdf>`_, Ian Goodfellow, Yoshua Bengio, Aaron Courville
-* `Why Does Unsupervised Pre-training Help Deep Learning? <http://www.jmlr.org/papers/volume11/erhan10a/erhan10a.pdf>`_ 
+* `Why Does Unsupervised Pre-training Help Deep Learning? <http://www.jmlr.org/papers/volume11/erhan10a/erhan10a.pdf>`_
