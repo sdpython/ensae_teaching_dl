@@ -1,9 +1,4 @@
 
-.. _l-README:
-
-README
-======
-
 .. image:: https://travis-ci.org/sdpython/ensae_teaching_dl.svg?branch=master
     :target: https://travis-ci.org/sdpython/ensae_teaching_dl
     :alt: Build status
@@ -37,9 +32,14 @@ README
     :target: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
-*ensae_teaching_dl* contains material for teachings about deep learning.
+.. _l-README:
 
-**Links:**
+ensae_teaching_dl
+=================
+
+It contains material for teachings about deep learning
+with *torch* and *keras*. Le contenu est principalement en
+français.
 
 * `GitHub/ensae_teaching_dl <https://github.com/sdpython/ensae_teaching_dl/>`_
 * `documentation <http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/index.html>`_
