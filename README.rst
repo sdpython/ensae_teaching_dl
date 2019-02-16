@@ -39,7 +39,7 @@ ensae_teaching_dl
 
 It contains material for teachings about deep learning
 with *torch* and *keras*. Le contenu est principalement en
-français.
+franÃ§ais.
 
 * `GitHub/ensae_teaching_dl <https://github.com/sdpython/ensae_teaching_dl/>`_
 * `documentation <http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/index.html>`_
