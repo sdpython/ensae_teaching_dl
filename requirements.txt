@@ -5,6 +5,7 @@ guzzle_sphinx_theme
 jyquickhelper
 keras
 Keras-Applications
+git+https://github.com/sdpython/nbconvert.git@fixes
 pyensae
 pymyinstall
 pyquickhelper>=1.8.2814
