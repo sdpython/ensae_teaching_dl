@@ -47,8 +47,8 @@ class TestModulesOpenCl(unittest.TestCase):
             fLOG(plat)
             for dev in plat.get_devices():
                 fLOG("   ", dev)
-        a_np = np.random.rand(50000).astype(np.float32)
-        b_np = np.random.rand(50000).astype(np.float32)
+        a_np = np.random.rand(50000).astype(np.float32)  # pylint: disable=E1101
+        b_np = np.random.rand(50000).astype(np.float32)  # pylint: disable=E1101
 
         # execute cl.create_some_context() from a console
         # and set up the following environment variable
