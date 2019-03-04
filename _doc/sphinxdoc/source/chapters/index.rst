@@ -73,3 +73,11 @@ Deep learning résolus
     :maxdepth: 2
 
     dl_resolus
+
+Interprétation
+++++++++++++++
+
+.. toctree::
+    :maxdepth:
+    
+    nn_interpretation
