@@ -7,6 +7,7 @@ import os
 import unittest
 import warnings
 from pyquickhelper.loghelper.flog import fLOG
+from pyquickhelper.pycode import skipif_circleci
 
 
 try:
@@ -25,6 +26,7 @@ except ImportError:
 
 class TestSkipExampleKerasMNIST(unittest.TestCase):
 
+    @skipif_circleci("too long")
     def test_keras_logreg(self):
         fLOG(
             __file__,
