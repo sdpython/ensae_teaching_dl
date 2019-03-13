@@ -9,6 +9,7 @@ import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.ipythonhelper import test_notebook_execution_coverage
 from pyquickhelper.pycode import add_missing_development_version, ExtTestCase
+from pyquickhelper.pycode import skipif_circleci
 
 try:
     import src
@@ -33,6 +34,7 @@ class TestNotebook1236Coverage210(ExtTestCase):
         add_missing_development_version(["pymyinstall", "pyensae", "jyquickhelper"],
                                         __file__, hide=True)
 
+    @skipif_circleci("too long")
     def test_notebook_torch_perceptron_convolution_mnist(self):
         fLOG(
             __file__,
