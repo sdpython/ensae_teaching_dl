@@ -11,20 +11,6 @@ from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import is_travis_or_appveyor
 
 
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
-
-
 class TestModulesOpenCl(unittest.TestCase):
 
     def test_opencl(self):
@@ -47,8 +33,10 @@ class TestModulesOpenCl(unittest.TestCase):
             fLOG(plat)
             for dev in plat.get_devices():
                 fLOG("   ", dev)
-        a_np = np.random.rand(50000).astype(np.float32)  # pylint: disable=E1101
-        b_np = np.random.rand(50000).astype(np.float32)  # pylint: disable=E1101
+        a_np = np.random.rand(50000).astype(
+            np.float32)  # pylint: disable=E1101
+        b_np = np.random.rand(50000).astype(
+            np.float32)  # pylint: disable=E1101
 
         # execute cl.create_some_context() from a console
         # and set up the following environment variable

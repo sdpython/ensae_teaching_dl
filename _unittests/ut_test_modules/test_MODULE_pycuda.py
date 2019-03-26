@@ -11,20 +11,6 @@ from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import is_travis_or_appveyor
 
 
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
-
-
 class TestModulesCuda(unittest.TestCase):
 
     @unittest.skipIf(is_travis_or_appveyor() is not None, "nopycuda on CI")
@@ -57,8 +43,10 @@ class TestModulesCuda(unittest.TestCase):
 
         multiply_them = mod.get_function("multiply_them")
 
-        a = numpy.random.randn(400).astype(numpy.float32)  # pylint: disable=E1101
-        b = numpy.random.randn(400).astype(numpy.float32)  # pylint: disable=E1101
+        a = numpy.random.randn(400).astype(
+            numpy.float32)  # pylint: disable=E1101
+        b = numpy.random.randn(400).astype(
+            numpy.float32)  # pylint: disable=E1101
 
         dest = numpy.zeros_like(a)
         multiply_them(

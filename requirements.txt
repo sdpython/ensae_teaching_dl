@@ -8,7 +8,7 @@ Keras-Applications
 git+https://github.com/sdpython/nbconvert.git@fixes
 pyensae
 pymyinstall
-pyquickhelper>=1.8.2814
+pyquickhelper>=1.9
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp

@@ -79,5 +79,5 @@ Interprétation
 
 .. toctree::
     :maxdepth:
-    
+
     nn_interpretation

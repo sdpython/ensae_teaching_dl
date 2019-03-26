@@ -18,6 +18,7 @@ Vous pouvez tester votre installation avec le notebook
     :maxdepth: 1
 
     chapters/index
+    gpu
     api/index
     i_ex
     all_notebooks

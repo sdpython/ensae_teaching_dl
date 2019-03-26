@@ -1,47 +1,24 @@
 """
 @brief      test log(time=11s)
 """
-
-import sys
-import os
 import unittest
 import warnings
 import numpy as np
-from pyquickhelper.loghelper.flog import fLOG
-
-
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
 
 
 class TestSkipExampleTorch(unittest.TestCase):
 
     def test_torch(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-
         with warnings.catch_warnings():
             warnings.simplefilter("ignore", ImportWarning)
             # Same line at the beginning of the file produces:
             # ImportError: numpy.core.multiarray failed to import
             from sklearn.datasets import load_iris
-            import torch
-            import torch.nn as nn
-            import torch.nn.functional as F
-            import torch.optim as optim
-            from torch.autograd import Variable
+            import torch  # pylint: disable=E0401
+            import torch.nn as nn  # pylint: disable=E0401
+            import torch.nn.functional as F  # pylint: disable=E0401
+            import torch.optim as optim  # pylint: disable=E0401
+            from torch.autograd import Variable  # pylint: disable=E0401
 
         X, Y = load_iris(return_X_y=True)
         X = X.astype("float32")

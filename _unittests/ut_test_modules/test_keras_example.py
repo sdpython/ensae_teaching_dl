@@ -1,27 +1,9 @@
 """
 @brief      test log(time=25s)
 """
-
-import sys
-import os
 import unittest
-import warnings
 from pyquickhelper.loghelper.flog import fLOG
 from pyquickhelper.pycode import skipif_circleci
-
-
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
 
 
 class TestSkipExampleKerasMNIST(unittest.TestCase):
@@ -33,15 +15,7 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
 
-        try:
-            from src.ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict
-        except SyntaxError as e:
-            if sys.version_info[:2] == (3, 7):
-                warnings.warn(
-                    "Tensorflow still not available on python 3.7: {0}".format(e))
-                return
-            else:
-                raise
+        from ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict
         fLOG("data")
         (X_train, Y_train), (X_test, Y_test) = keras_mnist_data()
         fLOG("model", Y_train.shape)
