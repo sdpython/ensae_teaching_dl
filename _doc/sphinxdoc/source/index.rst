@@ -17,6 +17,7 @@ Vous pouvez tester votre installation avec le notebook
 .. toctree::
     :maxdepth: 1
 
+    lectures_exos
     chapters/index
     gpu
     api/index

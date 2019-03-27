@@ -1,29 +1,21 @@
 
-Deep learning
-=============
+==========================
+Deep learning Applications
+==========================
+
+Les paragraphes qui suivent montrent des applications
+ou des directions de dans le domaine du deep learning.
+La recherche étant très active, il est sans doute
+un peu en retard. La présentation suivante
+donne un rapide aperçu du deep learning :
+:download:`Présentation du deep learning à l'ENSAE <DEEP_LEARNING_FOR_ENSAE.pdf>`
+(2018, Matthieu Bizien).
 
 .. contents::
     :local:
 
-Notebooks
-+++++++++
-
-.. toctree::
-    :maxdepth: 2
-
-    ml_deep_python
-    100_Logistic_IRIS
-    110_Perceptron_Iris
-    200_Perceptron_MNIST
-    210_Convolution_MNIST
-    300_Convolution_CIFAR10
-
-Tous les notebooks excepté le premier
-ont été écrits par
-`Matthieu Bizien <http://tantion.com/>`_.
-
 Deep learning en vrac
-+++++++++++++++++++++
+=====================
 
 .. toctree::
     :maxdepth: 1
@@ -39,7 +31,7 @@ Deep learning en vrac
     deep_auto_ml
 
 Images
-++++++
+======
 
 .. toctree::
     :maxdepth: 1
@@ -50,7 +42,7 @@ Images
     videos
 
 Sons
-++++
+====
 
 .. toctree::
     :maxdepth: 1
@@ -58,7 +50,7 @@ Sons
     reconnaissance_paroles
 
 Modèles inspirés du deep learning
-+++++++++++++++++++++++++++++++++
+=================================
 
 .. toctree::
     :maxdepth: 1
@@ -67,7 +59,14 @@ Modèles inspirés du deep learning
     deep_trees
 
 Deep learning résolus
-+++++++++++++++++++++
+=====================
+
+Cette section regroupe des papiers glanés sur le web
+abordant le plus souvent un problème concret et décrivant
+une solution qui s'appuie sur des modèles de deep learning.
+C'est une bonne source d'inspiration quand il s'agit
+de récupérer une idée d'architecture ou des données sur
+un problème en particulier.
 
 .. toctree::
     :maxdepth: 2
@@ -75,9 +74,9 @@ Deep learning résolus
     dl_resolus
 
 Interprétation
-++++++++++++++
+==============
 
 .. toctree::
-    :maxdepth:
+    :maxdepth: 1
 
     nn_interpretation
