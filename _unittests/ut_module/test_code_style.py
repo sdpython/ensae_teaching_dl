@@ -3,7 +3,6 @@
 """
 import os
 import unittest
-from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import check_pep8, ExtTestCase, add_missing_development_version
 
 
@@ -42,7 +41,6 @@ class TestCodeStyle(ExtTestCase):
                          "imported as skip_",
                          "Redefining built-in 'input'",
                          "Non-iterable value prange",
-                         "Unused import src",
                          "E1101: Module 'torch' has no ",
                          "E1101: Class 'mem_flags' has no ",
                          "W0221: Parameters differ from overridden 'forward'",
