@@ -264,3 +264,4 @@ _doc/sphinxdoc/source/nbcov*.png
 _doc/notebooks/101/data/cifar-10-batches-py
 _doc/notebooks/101/data/cifar-10-python.tar.gz
 *.cubin
+_doc/notebooks/101/data/MNIST/*

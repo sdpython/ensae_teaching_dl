@@ -72,6 +72,7 @@ epkg_dictionary.update({
     'itérateur': 'https://fr.wikipedia.org/wiki/It%C3%A9rateur',
     'keras': 'https://keras.io/',
     'map/reduce': 'https://fr.wikipedia.org/wiki/MapReduce',
+    'MNIST': 'http://yann.lecun.com/exdb/mnist/',
     'numba': 'https://numba.pydata.org/',
     'NVidia': 'https://www.nvidia.com/fr-fr/',
     'ONNX': 'https://onnx.ai/',

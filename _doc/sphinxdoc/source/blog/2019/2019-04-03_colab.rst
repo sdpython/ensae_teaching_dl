@@ -1,0 +1,19 @@
+
+.. blogpost::
+    :title: S'entraîner avec un GPU
+    :keywords: Colab, GPU
+    :date: 2019-04-03
+    :categories: Colab
+
+    L'utilisation de GPU offre des performances
+    souvent 10 fois supérieures à un CPU mais
+    tout le monde n'a pas du GPU à disposition.
+    Certains recommandent l'utilisation du
+    `Google Colab Free GPU Tutorial
+    <https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d>`_
+    mais le service a tendance à réallouer les GPU
+    après une ou deux heures ce qui ne permet des apprentissages
+    très longs.
+    Les `notebooks d'Azure <https://notebooks.azure.com/>`_
+    sont gratuits pour les étudiants et professeurs
+    pour tout ce qui utilise du CPU. Le GPU ne l'est pas.

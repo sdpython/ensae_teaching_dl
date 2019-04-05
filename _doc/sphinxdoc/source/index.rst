@@ -8,11 +8,8 @@ Découverte du deep learning
 Lectures, notebooks, helpers pour faire du :epkg:`deep learning`
 ou :epkg:`apprentissage profond` sous :epkg:`Python`.
 Le deep learning signifie aussi des calculs intensifs et des modules qui
-utilisent un compilateur C++ pour optimiser les calculs
-et le GPU si vous en avez.
-Vous pouvez tester votre installation avec le notebook
-:ref:`mldeeppythonrst` ou encore
-`Keras-TensorFlow-GPU-Windows-Installation <https://github.com/antoniosehk/keras-tensorflow-windows-installation>`_.
+utilisent un compilateur :epkg:`C++` pour optimiser les calculs
+et le :epkg:`GPU` si vous en avez.
 
 .. toctree::
     :maxdepth: 1
@@ -24,6 +21,22 @@ Vous pouvez tester votre installation avec le notebook
     i_ex
     all_notebooks
     i_index
+
+Vous pouvez exécuter la fonction
+:func:`pyopencl_status <ensae_teaching_dl.faq.faq_gpu.pyopencl_status>`
+pour obtenir plus d'information sur les processeurs disponibles.
+
+Si :epkg:`tensorflow` reste sans doute le framework
+de deep learning le plus utilisé, beaucoup de chercheurs
+et professeurs utilisent soit :ekpg:`keras`, soit
+epkg:`torch` et le dernier est le plus plébiscité
+par les chercheurs. L'installation est simple et
+la documentation est très bien faite, le code
+est souvent plus intuitif. Son point faible est encore
+la mise en production de modèles, :epkg:`tensorflow` est
+plus avancé sur ce point. :epkg:`ONNX` et :epkg:`onnxruntime`
+est l'option choisie par :epkg:`pytorch` qui n'est pas le
+seul framework à suivre cette direction.
 
 `github <https://github.com/sdpython/ensae_teaching_dl/>`_,
 `documentation <http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/index.html>`_,

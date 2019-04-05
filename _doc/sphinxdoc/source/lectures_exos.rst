@@ -23,7 +23,6 @@ Premier pas avec pytorch
 .. toctree::
     :maxdepth: 2
 
-    notebooks/ml_deep_python
     notebooks/100_Logistic_IRIS
     notebooks/110_Perceptron_Iris
     notebooks/200_Perceptron_MNIST
