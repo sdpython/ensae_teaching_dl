@@ -28,6 +28,7 @@ Premier pas avec pytorch
     notebooks/200_Perceptron_MNIST
     notebooks/210_Convolution_MNIST
     notebooks/300_Convolution_CIFAR10
+    notebooks/400_backward
 
 Tous les notebooks excepté le premier
 ont été écrits par
