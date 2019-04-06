@@ -1,0 +1,26 @@
+
+.. blogpost::
+    :title: opencl on CPU
+    :keywords: opencl, CPU
+    :date: 2019-04-06
+    :categories: CPU
+
+    I don't have GPU when running my unit test,
+    so I use CPU. So I got the following error:
+
+    ::
+
+        beignet-opencl-icd: no supported GPU found, this is probably the wrong opencl-icd package for this hardware
+
+    This article might be useful
+    `Install OpenCL on Ubuntu 17.04, intel
+    <https://askubuntu.com/questions/952164/install-opencl-on-ubuntu-17-04-intel>`_.
+    I tried:
+
+    ::
+
+        apt-get install beignt clinfo
+
+    Not really working. I might have to read this one
+    `How to set up OpenCL in Linux
+    <https://wiki.tiker.net/OpenCLHowTo>`_.
