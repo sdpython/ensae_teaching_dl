@@ -27,7 +27,7 @@ class TestCodeStyle(ExtTestCase):
                          "E0401: Unable to import 'keras",
                          ])
 
-    def test_style_test(self):
+    def dada_test_style_test(self):
         thi = os.path.abspath(os.path.dirname(__file__))
         test = os.path.normpath(os.path.join(thi, "..", ))
         check_pep8(test, fLOG=print, neg_pattern="temp_.*",
