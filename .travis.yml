@@ -2,7 +2,7 @@ dist: xenial
 sudo: true
 language: python
 python:
-    - "3.6"
+    - "3.7"
 addons:
 -  apt:
 -    packages:
@@ -31,7 +31,7 @@ before_install:
 install:
   - sudo apt-get install -qq gcc-6 g++-6
   - pip install -r requirements_conda.txt
-  - pip3 install http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
+  - pip3 install https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
   - pip install -r requirements.txt
   - export PYTHONPATH=src
 before_script:
