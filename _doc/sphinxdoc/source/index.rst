@@ -28,7 +28,7 @@ pour obtenir plus d'information sur les processeurs disponibles.
 
 Si :epkg:`tensorflow` reste sans doute le framework
 de deep learning le plus utilisé, beaucoup de chercheurs
-et professeurs utilisent soit :ekpg:`keras`, soit
+et professeurs utilisent soit :epkg:`keras`, soit
 epkg:`torch` et le dernier est le plus plébiscité
 par les chercheurs. L'installation est simple et
 la documentation est très bien faite, le code
