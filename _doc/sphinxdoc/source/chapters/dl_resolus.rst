@@ -110,6 +110,11 @@ Détection de parties d'objets
 
 * `Structured Set Matching Networks for One-Shot Part Labeling <https://arxiv.org/abs/1712.01867>`_
 
+Détection de positions (humaines)
++++++++++++++++++++++++++++++++++
+
+* `A 2019 guide to Human Pose Estimation with Deep Learning <https://blog.nanonets.com/human-pose-estimation-2d-guide/?utm_source=linkedin&utm_medium=social&utm_campaign=pose&utm_content=961087>`_
+
 Fraudes
 +++++++
 
