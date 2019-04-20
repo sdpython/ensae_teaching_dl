@@ -29,6 +29,7 @@ Apprentissage par renforcement
 ++++++++++++++++++++++++++++++
 
 * `Towards Reinforcement Learning in the Real World <https://vimeo.com/238221551>`_
+* `Open AI Spinning up <https://spinningup.openai.com/en/latest/index.html>`_
 
 Awesome, Playground...
 ++++++++++++++++++++++
