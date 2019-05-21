@@ -43,7 +43,8 @@ def pyopencl_status():
         # rows.append each device per-plat
         for device in plat.get_devices():
             rows.append('-' * 56)
-            rows.append('Device - Name:  ' + catch(lambda: device.name))  # pylint: disable=W0640
+            rows.append('Device - Name:  ' +
+                        catch(lambda: device.name))  # pylint: disable=W0640
             rows.append('Device - Type: {}'.format(
                         catch(lambda: cl.device_type.to_string(device.type))))  # pylint: disable=W0640
             rows.append('Device - Max Clock Speed:  {0} Mhz'.format(
