@@ -1,14 +1,14 @@
 
 .. blogpost::
-    :title: Quelques modules intéressants
+    :title: Quelques modules intÃ©ressants
     :keywords: magnitude
     :date: 2019-05-20
     :categories: modules
 
     `pymagnitude <https://github.com/plasticityai/magnitude>`_ :
-    calculer les prédictions de modèles de deep learning un peu plus vite.
+    calculer les prÃ©dictions de modÃ¨les de deep learning un peu plus vite.
 
     `lmdb-embeddings <https://github.com/ThoughtRiver/lmdb-embeddings>`_ est une
     autre option qui permet de stocker les coefficients sur un disque
     `SSD <https://en.wikipedia.org/wiki/Solid-state_drive>`_,
-    moins de choses en mémoire pour une perte très légère en performance.
+    moins de choses en mÃ©moire pour une perte trÃ¨s lÃ©gÃ¨re en performance.
