@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: Voiture automatique
+    :keywords: voiture automatique, deep learning, pytorch, onnxruntime
+    :date: 2019-08-26
+    :categories: deep learning
+
+    Ce n'est pas une vraie voiture mais un jeu.
+    Il y a néanmoins tout ce qu'il faut pour la construire.
+    `AutoCar <https://github.com/christian-vorhemus/autcar>`_
+    et apprendre les réseaux de neurones dont elle a besoin.
