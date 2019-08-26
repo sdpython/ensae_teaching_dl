@@ -22,7 +22,7 @@ def keras_mnist_data():
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
     img_rows, img_cols = 28, 28    # should be cmputed from the data
 
-    if K.image_dim_ordering() == 'th':
+    if K.image_dim_ordering() == 'th':  # pylint: disable=E1101
         X_train = X_train.reshape(X_train.shape[0], 1, img_rows, img_cols)
         X_test = X_test.reshape(X_test.shape[0], 1, img_rows, img_cols)
     else:
@@ -62,8 +62,8 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     img_rows, img_cols = 28, 28    # should be cmputed from the data
 
     fLOG("[keras_build_mnist_model] K.image_dim_ordering()={0}".format(
-        K.image_dim_ordering()))
-    if K.image_dim_ordering() == 'th':
+        K.image_dim_ordering()))  # pylint: disable=E1101
+    if K.image_dim_ordering() == 'th':  # pylint: disable=E1101
         input_shape = (1, img_rows, img_cols)
     else:
         input_shape = (img_rows, img_cols, 1)

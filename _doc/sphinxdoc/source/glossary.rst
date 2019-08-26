@@ -7,7 +7,7 @@ Glossary
 .. glossary::
 
     cheat sheet
-    
+
         Un mot-clé particulièrement intéressant car il permet de trouver
         des informations concentrées sur quelques pages et évitent de nombreuses
         recherches. Un exemple : `Deep Learning Tips and Tricks cheatsheet
