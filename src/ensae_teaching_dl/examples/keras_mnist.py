@@ -22,7 +22,13 @@ def keras_mnist_data():
     (X_train, y_train), (X_test, y_test) = mnist.load_data()
     img_rows, img_cols = 28, 28    # should be cmputed from the data
 
-    if K.image_dim_ordering() == 'th':  # pylint: disable=E1101
+    try:
+        imgord = K.common.image_dim_ordering()
+    except Exception:  # pylint: disable=W0703
+        # older version
+        imgord = K.image_dim_ordering()  # pylint: disable=E1101
+
+    if imgord == 'th':
         X_train = X_train.reshape(X_train.shape[0], 1, img_rows, img_cols)
         X_test = X_test.reshape(X_test.shape[0], 1, img_rows, img_cols)
     else:
@@ -54,16 +60,21 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     from keras.layers import Convolution2D, MaxPooling2D
     from keras import backend as K
 
+    try:
+        imgord = K.common.image_dim_ordering()
+    except Exception:  # pylint: disable=W0703
+        # older version
+        imgord = K.image_dim_ordering()  # pylint: disable=E1101
+
     model = Sequential()
 
     nb_filters = 32
     pool_size = (2, 2)
     kernel_size = (3, 3)
-    img_rows, img_cols = 28, 28    # should be cmputed from the data
+    img_rows, img_cols = 28, 28  # should be cmputed from the data
 
-    fLOG("[keras_build_mnist_model] K.image_dim_ordering()={0}".format(
-        K.image_dim_ordering()))  # pylint: disable=E1101
-    if K.image_dim_ordering() == 'th':  # pylint: disable=E1101
+    fLOG("[keras_build_mnist_model] K.image_dim_ordering()={0}".format(imgord))
+    if imgord == 'th':
         input_shape = (1, img_rows, img_cols)
     else:
         input_shape = (img_rows, img_cols, 1)
