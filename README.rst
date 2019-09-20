@@ -24,10 +24,6 @@
     :alt: GitHub Issues
     :target: https://github.com/sdpython/ensae_teaching_dl/issues
 
-.. image:: https://badge.waffle.io/sdpython/ensae_teaching_dl.png?label=to%20do&title=to%20do
-    :alt: Waffle
-    :target: https://waffle.io/sdpython/ensae_teaching_dl
-
 .. image:: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/_images/nbcov.png
     :target: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
