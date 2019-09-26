@@ -43,9 +43,9 @@ class TestModulesCuda(unittest.TestCase):
 
         multiply_them = mod.get_function("multiply_them")
 
-        a = numpy.random.randn(400).astype(
+        a = numpy.random.randn(400).astype(  # pylint: disable=E1101
             numpy.float32)  # pylint: disable=E1101
-        b = numpy.random.randn(400).astype(
+        b = numpy.random.randn(400).astype(  # pylint: disable=E1101
             numpy.float32)  # pylint: disable=E1101
 
         dest = numpy.zeros_like(a)

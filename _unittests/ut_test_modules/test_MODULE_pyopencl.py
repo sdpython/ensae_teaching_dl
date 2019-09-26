@@ -33,9 +33,9 @@ class TestModulesOpenCl(unittest.TestCase):
             fLOG(plat)
             for dev in plat.get_devices():
                 fLOG("   ", dev)
-        a_np = np.random.rand(50000).astype(
+        a_np = np.random.rand(50000).astype(  # pylint: disable=E1101
             np.float32)  # pylint: disable=E1101
-        b_np = np.random.rand(50000).astype(
+        b_np = np.random.rand(50000).astype(  # pylint: disable=E1101
             np.float32)  # pylint: disable=E1101
 
         # execute cl.create_some_context() from a console
