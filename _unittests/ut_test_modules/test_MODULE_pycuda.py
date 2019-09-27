@@ -24,11 +24,11 @@ class TestModulesCuda(unittest.TestCase):
                 return
 
         try:
-            import pycuda.driver as drv
+            import pycuda.driver as drv  # pylint: disable=C0415
         except ImportError as e:
             warnings.warn("No pycuda installed: {0}".format(e))
             return
-        import numpy
+        import numpy  # pylint: disable=C0415
 
         from pycuda.compiler import SourceModule
         options = None if sys.platform.startswith(

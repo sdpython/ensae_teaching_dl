@@ -26,8 +26,8 @@ class TestModulesOpenCl(unittest.TestCase):
             # skipping on automated build
             return
 
-        import numpy as np
-        import pyopencl as cl
+        import numpy as np  # pylint: disable=C0415
+        import pyopencl as cl  # pylint: disable=C0415
         from pyopencl import get_platforms
         for plat in get_platforms():
             fLOG(plat)
