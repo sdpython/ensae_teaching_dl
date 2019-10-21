@@ -15,5 +15,6 @@ sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 # tensorflow
 torchvision
+tqdm
 wheel
 
