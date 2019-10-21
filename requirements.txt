@@ -9,7 +9,7 @@ Keras-Preprocessing
 git+https://github.com/sdpython/nbconvert.git@fixes
 pyensae
 pymyinstall
-pyquickhelper>=1.9
+pyquickhelper>=1.9.3240
 sphinx_bootstrap_theme
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
