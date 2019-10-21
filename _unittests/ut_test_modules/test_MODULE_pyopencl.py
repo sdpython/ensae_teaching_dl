@@ -28,7 +28,7 @@ class TestModulesOpenCl(unittest.TestCase):
 
         import numpy as np  # pylint: disable=C0415
         import pyopencl as cl  # pylint: disable=C0415
-        from pyopencl import get_platforms
+        from pyopencl import get_platforms  # pylint: disable=C0415
         for plat in get_platforms():
             fLOG(plat)
             for dev in plat.get_devices():

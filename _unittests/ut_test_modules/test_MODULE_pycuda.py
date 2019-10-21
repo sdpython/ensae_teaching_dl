@@ -30,7 +30,7 @@ class TestModulesCuda(unittest.TestCase):
             return
         import numpy  # pylint: disable=C0415
 
-        from pycuda.compiler import SourceModule
+        from pycuda.compiler import SourceModule  # pylint: disable=C0415
         options = None if sys.platform.startswith(
             "win") else ["-ccbin", "clang-3.8"]
         mod = SourceModule("""
