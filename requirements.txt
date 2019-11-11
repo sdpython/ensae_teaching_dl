@@ -6,7 +6,6 @@ jyquickhelper
 keras
 Keras-Applications
 Keras-Preprocessing
-git+https://github.com/sdpython/nbconvert.git@fixes
 pyensae
 pymyinstall
 pyquickhelper>=1.9.3240
