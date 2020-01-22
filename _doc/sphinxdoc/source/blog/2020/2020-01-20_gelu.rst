@@ -1,0 +1,18 @@
+
+.. blogpost::
+    :title: GELU
+    :keywords: gelu, relu, elu
+    :date: 2020-01-20
+    :categories: activation
+
+    Un article intéressant sur un petit changement
+    numérique dans la fonction d'activation :
+    `Gaussian Error Linear Units (GELUS)
+    <https://arxiv.org/pdf/1606.08415.pdf>`_.
+    D'après l'article, cette nouvelle fonction d'activation
+    est comparable à la fonction Relu voire meilleure sur certains
+    problèmes. Cette fonction d'activation est stochastique
+    dans le sens où parfois la fonction retourne *x* ou 0
+    selon qu'une variable normale *Y* est inférieur à *x*.
+    Le réseau introduit lui-même un bruit lors de la prédiction,
+    la couche suivante doit donc en tenir compte.

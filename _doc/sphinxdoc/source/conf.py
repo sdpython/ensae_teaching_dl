@@ -48,7 +48,7 @@ html_context = {
 }
 
 
-html_logo = "project_ico.png"
+html_logo = "phdoc_static/project_ico.png"
 
 language = "fr"
 
