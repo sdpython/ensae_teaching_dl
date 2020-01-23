@@ -1,6 +1,6 @@
 
 .. blogpost::
-    :title: GELU
+    :title: GELU et descente de gradient
     :keywords: gelu, relu, elu
     :date: 2020-01-20
     :categories: activation
@@ -16,3 +16,15 @@
     selon qu'une variable normale *Y* est inférieur à *x*.
     Le réseau introduit lui-même un bruit lors de la prédiction,
     la couche suivante doit donc en tenir compte.
+
+    Un autre article `Deep Double Descent: Where Bigger Models and More Data Hurt
+    <https://arxiv.org/abs/1912.02292>`_ qui explicite certaines intuitions,
+    il étudie le comportement des erreurs de prédiction sur
+    les bases d'apprentissage et de test en fonction de la taille
+    des modèles avec trois tailles en particulier : le modèle
+    a moins de coefficients que d'exemples dans la base d'apprentissage,
+    il en a autant, il en a beaucoup plus. On s'attend à ce que le
+    dernier modèle fasse de l'overfitting et... l'article
+    montre qu'à partir d'un certain nombre d'itération, le gradient
+    se comporte différemment et que ce phénomène n'est pas
+    toujours observé.
