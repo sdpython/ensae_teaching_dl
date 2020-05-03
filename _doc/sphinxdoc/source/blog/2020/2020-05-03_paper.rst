@@ -1,0 +1,10 @@
+
+.. blogpost::
+    :title: Deep Learning, introduction
+    :keywords: tutorial, interprétabilité
+    :date: 2020-05-03
+    :categories: paper
+
+    Un article d'introduction au deep learning :
+    `Explainable Deep Learning: A Field Guide for the Uninitiated
+    <https://arxiv.org/pdf/2004.14545.pdf>`_.
