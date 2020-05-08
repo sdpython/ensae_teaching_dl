@@ -3,7 +3,8 @@
 """
 import os
 import unittest
-from pyquickhelper.pycode import check_pep8, ExtTestCase, add_missing_development_version
+from pyquickhelper.pycode import (
+    check_pep8, ExtTestCase, add_missing_development_version, skipif_circleci)
 
 
 class TestCodeStyle(ExtTestCase):
@@ -12,6 +13,7 @@ class TestCodeStyle(ExtTestCase):
         add_missing_development_version(
             ["jyquickhelper", "pymyinstall"], __file__, hide=True)
 
+    @skipif_circleci('fails in astropy')
     def test_style_src(self):
         thi = os.path.abspath(os.path.dirname(__file__))
         src_ = os.path.normpath(os.path.join(thi, "..", "..", "src"))
