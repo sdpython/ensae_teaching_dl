@@ -6,10 +6,13 @@ jyquickhelper
 keras
 Keras-Applications
 Keras-Preprocessing
+matplotlib
+pycodestyle
 pyensae
 pymyinstall
 pyquickhelper>=1.9.3240
 sphinx_bootstrap_theme
+sphinxcontrib.imagesvg
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 # tensorflow
