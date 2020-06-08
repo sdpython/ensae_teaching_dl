@@ -21,3 +21,10 @@ Détection d'objets
 * `Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks <https://arxiv.org/abs/1506.01497>`_
 * `Mask R-CNN <https://arxiv.org/abs/1703.06870>`_
 * `Pascal VOC Dataset <https://github.com/Microsoft/CNTK/tree/master/Examples/Image/DataSets/Pascal>`_
+* `End-to-end Object Detection with Transformers
+  <https://ai.facebook.com/research/publications/end-to-end-object-detection-with-transformers>`_
+
+*Code*
+
+* `detr <https://github.com/facebookresearch/detr>`_
+
