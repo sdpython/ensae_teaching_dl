@@ -10,6 +10,7 @@ matplotlib
 pycodestyle
 pyensae
 pymyinstall
+pylint
 pyquickhelper>=1.9.3240
 sphinx_bootstrap_theme
 sphinxcontrib.imagesvg
