@@ -28,6 +28,10 @@
     :target: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
+.. image:: https://img.shields.io/github/repo-size/sdpython/ensae_teaching_dl
+    :target: https://github.com/sdpython/ensae_teaching_dl/
+    :alt: size
+
 .. _l-README:
 
 ensae_teaching_dl

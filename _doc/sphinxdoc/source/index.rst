@@ -72,6 +72,10 @@ seul framework à suivre cette direction.
     :target: http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
+.. image:: https://img.shields.io/github/repo-size/sdpython/ensae_teaching_dl
+    :target: https://github.com/sdpython/ensae_teaching_dl/
+    :alt: size
+
 +----------------------+---------------------+---------------------+--------------------+------------------------+------------------------------------------------+
 | :ref:`l-modules`     |  :ref:`l-functions` | :ref:`l-classes`    | :ref:`l-methods`   | :ref:`l-staticmethods` | :ref:`l-properties`                            |
 +----------------------+---------------------+---------------------+--------------------+------------------------+------------------------------------------------+
