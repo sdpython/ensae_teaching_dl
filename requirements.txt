@@ -2,6 +2,7 @@ chardet
 coverage
 gensim
 guzzle_sphinx_theme
+jupyter_sphinx
 jyquickhelper
 keras
 Keras-Applications
