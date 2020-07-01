@@ -23,7 +23,7 @@ def keras_mnist_data():
     img_rows, img_cols = 28, 28    # should be cmputed from the data
 
     try:
-        imgord = K.common.image_dim_ordering()
+        imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
     except Exception:  # pylint: disable=W0703
         # older version
         imgord = K.image_dim_ordering()  # pylint: disable=E1101
