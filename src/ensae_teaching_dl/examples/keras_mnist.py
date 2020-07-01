@@ -56,12 +56,13 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     @return                     the model
     """
     from keras.models import Sequential
-    from keras.layers import Dense, Dropout, Activation, Flatten
-    from keras.layers import Convolution2D, MaxPooling2D
+    from keras.layers import (
+        Dense, Dropout, Activation, Flatten,
+        Convolution2D, MaxPooling2D)
     from keras import backend as K
 
     try:
-        imgord = K.common.image_dim_ordering()
+        imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
     except Exception:  # pylint: disable=W0703
         # older version
         imgord = K.image_dim_ordering()  # pylint: disable=E1101
