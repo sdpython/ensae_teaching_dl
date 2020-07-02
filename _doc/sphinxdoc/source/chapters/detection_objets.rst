@@ -27,4 +27,3 @@ Détection d'objets
 *Code*
 
 * `detr <https://github.com/facebookresearch/detr>`_
-

@@ -16,7 +16,8 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
 
-        from ensae_teaching_dl.examples.keras_mnist import keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict
+        from ensae_teaching_dl.examples.keras_mnist import (
+            keras_mnist_data, keras_build_mnist_model, keras_fit, keras_predict)
         fLOG("data")
         (X_train, Y_train), (X_test, Y_test) = keras_mnist_data()
         fLOG("model", Y_train.shape)
@@ -24,7 +25,7 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
         fLOG("fit")
         if False and __name__ == "__main__":
             keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=1,  # 128 for a better accuracy
-                      nb_classes=None, nb_epoch=1, fLOG=fLOG)
+                      nb_classes=None, epochs=1, fLOG=fLOG)
         else:
             # We make it shortest when run in unit test
             fLOG("quicker")
@@ -34,7 +35,7 @@ class TestSkipExampleKerasMNIST(unittest.TestCase):
             X_test = X_test[:N, :]
             Y_test = Y_test[:N, :]
             keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=1,  # 128 for a better accuracy
-                      nb_classes=None, nb_epoch=1, fLOG=fLOG)
+                      nb_classes=None, epochs=1, fLOG=fLOG)
         score = keras_predict(model, X_test, Y_test)
         r = score[:5]
         fLOG(r)

@@ -23,10 +23,14 @@ def keras_mnist_data():
     img_rows, img_cols = 28, 28    # should be cmputed from the data
 
     try:
-        imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
+        imgord = K.image_data_format()
     except Exception:  # pylint: disable=W0703
         # older version
-        imgord = K.image_dim_ordering()  # pylint: disable=E1101
+        try:
+            imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
+        except Exception:  # pylint: disable=W0703
+            # older version
+            imgord = K.image_dim_ordering()  # pylint: disable=E1101
 
     if imgord == 'th':
         X_train = X_train.reshape(X_train.shape[0], 1, img_rows, img_cols)
@@ -62,10 +66,14 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     from keras import backend as K
 
     try:
-        imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
+        imgord = K.image_data_format()
     except Exception:  # pylint: disable=W0703
         # older version
-        imgord = K.image_dim_ordering()  # pylint: disable=E1101
+        try:
+            imgord = K.common.image_dim_ordering()  # pylint: disable=E1101
+        except Exception:  # pylint: disable=W0703
+            # older version
+            imgord = K.image_dim_ordering()  # pylint: disable=E1101
 
     model = Sequential()
 
@@ -80,9 +88,13 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
     else:
         input_shape = (img_rows, img_cols, 1)
 
-    model.add(Convolution2D(nb_filters, kernel_size[0], kernel_size[1],
-                            border_mode='valid',
-                            input_shape=input_shape))
+    try:
+        model.add(Convolution2D(nb_filters, kernel_size[0], kernel_size[1],
+                                padding='valid', input_shape=input_shape))
+    except Exception:  # pylint: disable=W0703
+        # older version
+        model.add(Convolution2D(nb_filters, kernel_size[0], kernel_size[1],
+                                border_mode='valid', input_shape=input_shape))
     model.add(Activation('relu'))
     model.add(Convolution2D(nb_filters, kernel_size[0], kernel_size[1]))
     model.add(Activation('relu'))
@@ -103,7 +115,7 @@ def keras_build_mnist_model(nb_classes, fLOG=None):
 
 
 def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
-              nb_classes=None, nb_epoch=12, fLOG=None):
+              nb_classes=None, epochs=12, fLOG=None):
     """
     Fits a :epkg:`keras` model.
 
@@ -114,7 +126,7 @@ def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
     @param      Y_test      test target
     @param      batch_size  batch size
     @param      nb_classes  nb_classes
-    @param      nb_epoch    number of iterations
+    @param      epochs      number of iterations
     @param      fLOG        logging function
     @return                 model
     """
@@ -124,8 +136,12 @@ def keras_fit(model, X_train, Y_train, X_test, Y_test, batch_size=128,
         nb_classes = Y_train.shape[1]
         if fLOG:
             fLOG("[keras_fit] nb_classes=%d" % nb_classes)
-    model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch,
-              verbose=1, validation_data=(X_test, Y_test))
+    try:
+        model.fit(X_train, Y_train, batch_size=batch_size, epochs=epochs,
+                  verbose=1, validation_data=(X_test, Y_test))
+    except Exception:  # pylint: disable=W0703
+        model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=epochs,
+                  verbose=1, validation_data=(X_test, Y_test))
     return model
 
 

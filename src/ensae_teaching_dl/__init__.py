@@ -4,7 +4,7 @@
 @brief Around :epkg:`deep learning`.
 """
 
-__version__ = "0.2.123"
+__version__ = "0.2.141"
 __author__ = "Xavier Dupré"
 
 
