@@ -1,0 +1,12 @@
+
+.. blogpost::
+    :title: Keras to Tensorflow
+    :keywords: keras, tensorflow
+    :date: 2020-05-03
+    :categories: code
+
+    J'ai cherché ça longtemps :    
+    `Freezing a Keras model
+    <https://towardsdatascience.com/freezing-a-keras-model-c2e26cb84a38>`_.
+    La documentation de :epkg:`tensorflow` est pléthorique,
+    tellement qu'on ne s'y retrouve plus.
