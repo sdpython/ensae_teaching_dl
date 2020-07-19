@@ -25,7 +25,7 @@ class TestKerasFreeze(ExtTestCase):
             ]))
         model.compile(optimizer="Adam", loss="mse", metrics=["mae"])
         _, out, __ = self.capture(lambda: model.summary())
-        self.assertIn("quantize_layer", out)
+        self.assertIn("quant", out)
         x = numpy.array([[0, 1, 2, 3, 4]], dtype=numpy.float32)
         y = model.predict(x)
         self.assertEqual(y.shape, (1, 3))
