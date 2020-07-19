@@ -1,8 +1,8 @@
 autopep8
 chardet
 coverage
+dm-tree
 gensim
-guzzle_sphinx_theme
 jupyter_sphinx
 jyquickhelper
 keras
