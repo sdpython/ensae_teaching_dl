@@ -2,7 +2,7 @@
 .. blogpost::
     :title: Keras to Tensorflow
     :keywords: keras, tensorflow
-    :date: 2020-05-03
+    :date: 2020-07-16
     :categories: code
 
     J'ai cherché ça longtemps :

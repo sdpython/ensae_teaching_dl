@@ -264,6 +264,7 @@ Segmentation d'images
 * `Xception: Deep Learning with Depthwise Separable Convolutions <https://arxiv.org/pdf/1610.02357.pdf>`_
 * `DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs <https://arxiv.org/abs/1606.00915>`_
 * `Rethinking Atrous Convolution for Semantic Image Segmentation <https://arxiv.org/pdf/1706.05587.pdf>`_
+* `Pose2Seg: Detection Free Human Instance Segmentation <https://arxiv.org/pdf/1803.10683.pdf>`_
 
 Suivis d'objets
 +++++++++++++++

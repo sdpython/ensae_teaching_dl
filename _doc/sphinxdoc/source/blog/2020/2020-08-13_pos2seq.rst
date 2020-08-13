@@ -1,0 +1,12 @@
+
+.. blogpost::
+    :title: Pose2seq
+    :keywords: pose2seq
+    :date: 2020-08-13
+    :categories: segmentation
+
+    Le modèle segmente plusieurs personnes sur la même image,
+    pixel à pixel.
+    Article : `Pose2Seg: Detection Free Human Instance Segmentation
+    <https://arxiv.org/pdf/1803.10683.pdf>`_,
+    code : `Pose2Seg <https://github.com/liruilong940607/Pose2Seg>`_.
