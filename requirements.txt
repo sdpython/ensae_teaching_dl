@@ -1,7 +1,6 @@
 autopep8
 chardet
 coverage
-dm-tree
 gensim
 jupyter_sphinx
 jyquickhelper
