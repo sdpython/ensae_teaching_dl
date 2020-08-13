@@ -18,7 +18,7 @@ sphinxcontrib.imagesvg
 sphinxjp.themes.basicstrap
 sphinxjp.themes.sphinxjp
 # tensorflow
-tensorflow_model_optimization
+# tensorflow_model_optimization
 torchvision
 tqdm
 wheel
