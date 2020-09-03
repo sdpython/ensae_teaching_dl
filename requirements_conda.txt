@@ -12,3 +12,4 @@ scipy
 Sphinx
 statsmodels
 tensorflow
+tensorflow_model_optimization
