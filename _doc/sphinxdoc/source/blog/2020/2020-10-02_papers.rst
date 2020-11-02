@@ -1,0 +1,13 @@
+
+.. blogpost::
+    :title: Quelques articles
+    :keywords: implémentation
+    :date: 2020-10-02
+    :categories: optimisation
+
+    * `Compiling ONNX Neural Network Models Using MLIR
+       <https://arxiv.org/pdf/2008.08272.pdf>`_
+    * `Scaling Distributed Training with Adaptive Summation
+      <https://arxiv.org/abs/2006.02924>`_
+    * `ZeRO: Memory Optimizations Toward Training Trillion Parameter Models
+      <https://arxiv.org/abs/1910.02054>`_
