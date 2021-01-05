@@ -1,0 +1,23 @@
+
+.. blogpost::
+    :title: Quelques articles
+    :keywords: implémentation
+    :date: 2021-01-05
+    :categories: optimisation
+
+    Ce papier ouvre la voix à la reconnaissance du langage
+    des signes en temps réel et aussi à n'importe quel forme
+    de pilotage à partir de la position des mains, tous les
+    sports, un logiciel pourra vous dire si votre geste de tennis
+    est correct, et toutes les consoles de jeux n'auront
+    plus besoin de manettes.
+
+    `Constraining Dense Hand Surface Tracking with Elasticity
+    <https://research.fb.com/publications/
+    constraining-dense-hand-surface-tracking-with-elasticity/>`_
+
+    Le suivant résoud une équation différentielle...
+    
+    `Artificial Intelligence Solves Schrödinger's Equation, a Fundamental Problem in Quantum Chemistry
+    <https://scitechdaily.com/
+    artificial-intelligence-solves-schrodingers-equation-a-fundamental-problem-in-quantum-chemistry/>`_
