@@ -55,21 +55,15 @@ jobs:
             pip install numpy
 
       - run:
-          name: install dependencies (1)
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements_conda.txt
-
-      - run:
-          name: install torch
+          name: install torch, tensorflow
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+            pip install tensorflow
 
       - run:
-          name: install dependencies (2)
+          name: install dependencies
           command: |
             python3 -m venv venv
             . venv/bin/activate

@@ -1,3 +1,21 @@
+# conda
+cffi
+Cython
+cytoolz
+jupyter
+matplotlib
+notebook
+numba
+numpy
+Pillow
+scikit-learn
+scipy
+Sphinx
+statsmodels
+# tensorflow
+# tensorflow_model_optimization
+
+# other
 autopep8
 chardet
 coverage
