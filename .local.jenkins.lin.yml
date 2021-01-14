@@ -19,13 +19,14 @@ before_script:
   - set KERAS_BACKEND=tensorflow
 
 script:
-  - { CMD: "$PYINT -u setup.py unittests -g \".*((MODULE)|(210)|(300)|(code_style)|(test_torch)).*\"", NAME: "UT", TIMEOUT: 3600 }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*(code_style).*\"", NAME: "UT_STYLE", TIMEOUT: 3600 }
+  - { CMD: "$PYINT -u setup.py unittests -g \".*((MODULE)|(210)|(300)|(400)|(code_style)|(test_torch)).*\"", NAME: "UT", TIMEOUT: 3600 }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*(code_style).*\"", NAME: "UT_STYLE", TIMEOUT: 4800 }
   - { CMD: "$PYINT -u setup.py unittests -e \".*((keras)).*\"", NAME: "UT_KERAS", TIMEOUT: 12000 }
   - { CMD: "$PYINT -u setup.py unittests -e \".*MODULE.*cuda.*\"", NAME: "UT_MODULE_CUDA" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*MODULE.*\" -g \".*cuda.*\"", NAME: "UT_MODULE" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*210.*\"", NAME: "UT_210" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*300.*\"", NAME: "UT_300" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*400.*\"", NAME: "UT_400" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*(test_torch).*\"", NAME: "UT_TORCH" }
   - { CMD: "$PYINT -u setup.py unittests_LONG", NAME: "UT_LONG" }
 
