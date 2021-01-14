@@ -27,7 +27,11 @@ class TestModulesOpenCl(unittest.TestCase):
             return
 
         import numpy as np  # pylint: disable=C0415
-        import pyopencl as cl  # pylint: disable=C0415
+        try:
+            import pyopencl as cl  # pylint: disable=C0415
+        except ImportError as e:
+            warnings.warn("Unable to import opencl %r." % e)
+            return
         from pyopencl import get_platforms  # pylint: disable=C0415
         for plat in get_platforms():
             fLOG(plat)
