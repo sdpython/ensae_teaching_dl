@@ -19,9 +19,9 @@ before_script:
   - set KERAS_BACKEND=tensorflow
 
 script:
-  - { CMD: "$PYINT -u setup.py unittests -g \".*((MODULE)|(210)|(300)|(code_style)|(test_torch)).*\"", NAME: "UT", TIMEOUT: 2400 }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*(code_style).*\"", NAME: "UT_STYLE", TIMEOUT: 2400 }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*((keras)).*\"", NAME: "UT_KERAS", TIMEOUT: 7200 }
+  - { CMD: "$PYINT -u setup.py unittests -g \".*((MODULE)|(210)|(300)|(code_style)|(test_torch)).*\"", NAME: "UT", TIMEOUT: 3600 }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*(code_style).*\"", NAME: "UT_STYLE", TIMEOUT: 3600 }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*((keras)).*\"", NAME: "UT_KERAS", TIMEOUT: 12000 }
   - { CMD: "$PYINT -u setup.py unittests -e \".*MODULE.*cuda.*\"", NAME: "UT_MODULE_CUDA" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*MODULE.*\" -g \".*cuda.*\"", NAME: "UT_MODULE" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*210.*\"", NAME: "UT_210" }
