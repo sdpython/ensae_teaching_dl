@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-from setuptools import setup, Extension
-from setuptools import find_packages
+from setuptools import setup, Extension, find_packages
 
 #########
 # settings

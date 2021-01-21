@@ -27,6 +27,7 @@ Keras-Applications
 Keras-Preprocessing
 matplotlib
 pycodestyle
+pydata_sphinx_theme
 pyensae
 pymyinstall
 pylint
