@@ -17,7 +17,7 @@
     constraining-dense-hand-surface-tracking-with-elasticity/>`_
 
     Le suivant résoud une équation différentielle...
-    
+
     `Artificial Intelligence Solves Schrödinger's Equation, a Fundamental Problem in Quantum Chemistry
     <https://scitechdaily.com/
     artificial-intelligence-solves-schrodingers-equation-a-fundamental-problem-in-quantum-chemistry/>`_
