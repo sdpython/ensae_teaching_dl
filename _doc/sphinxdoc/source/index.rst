@@ -43,8 +43,8 @@ seul framework à suivre cette direction.
 :ref:`l-README`,
 :ref:`blog <ap-main-0>`
 
-.. image:: https://travis-ci.org/sdpython/ensae_teaching_dl.svg?branch=master
-    :target: https://travis-ci.org/sdpython/ensae_teaching_dl
+.. image:: https://travis-ci.com/sdpython/ensae_teaching_dl.svg?branch=master
+    :target: https://travis-ci.com/sdpython/ensae_teaching_dl
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/b7c2o4fqlaxl0r0a?svg=true
