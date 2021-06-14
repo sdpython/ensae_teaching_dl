@@ -5,6 +5,11 @@
     :date: 2021-06-14
     :categories: apprentissage
 
+    * `Deep Learning course: lecture slides and lab notebooks
+      <https://github.com/m2dsupsdlclass/lectures-labs/>`_
+      (Charles Ollion, Olivier Grisel),
+      `Master Year 2 Data Science IP-Paris
+      <https://www.ip-paris.fr/education/masters/mention-mathematiques-appliquees-statistiques/master-year-2-data-science>`_
     * `LocoProp: Enhancing BackProp via Local Loss Optimization
       <https://arxiv.org/abs/2106.06199>`_
     * `Understanding Failures of Deep Networks via Robust Feature Extraction
