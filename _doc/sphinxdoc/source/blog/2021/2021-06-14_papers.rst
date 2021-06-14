@@ -1,0 +1,13 @@
+
+.. blogpost::
+    :title: Quelques articles
+    :keywords: implémentation
+    :date: 2021-06-14
+    :categories: apprentissage
+
+    * `LocoProp: Enhancing BackProp via Local Loss Optimization
+      <https://arxiv.org/abs/2106.06199>`_
+    * `Understanding Failures of Deep Networks via Robust Feature Extraction
+      <https://arxiv.org/abs/2012.01750>`_
+    * `Understanding Failures of Deep Networks via Robust Feature Extraction
+      <https://ai.googleblog.com/2021/06/frill-on-device-speech-representations.html>`_
