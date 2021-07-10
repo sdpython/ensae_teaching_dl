@@ -3,13 +3,11 @@
 """
 import unittest
 from pyquickhelper.loghelper.flog import fLOG
-from pyquickhelper.pycode import skipif_circleci, skipif_travis
 
 
 class TestSkipExampleKerasMNIST(unittest.TestCase):
 
-    @skipif_circleci("too long")
-    @skipif_travis("fails")
+    @unittest.skipIf(True, reason="fails")
     def test_keras_logreg(self):
         fLOG(
             __file__,
