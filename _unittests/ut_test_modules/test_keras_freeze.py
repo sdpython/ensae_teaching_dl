@@ -13,11 +13,16 @@ class TestKerasFreeze(ExtTestCase):
         import tensorflow as tf
         from tensorflow import keras
         from tensorflow.keras import layers
-        from tensorflow_model_optimization.quantization.keras import quantize_model
+        try:
+            from tensorflow_model_optimization.quantization.keras import quantize_model
+        except ImportError:
+            quantize_model = None
         return tf, keras, layers, quantize_model
 
     def test_quantize_keras(self):
         tf, keras, layers, quantize_model = self.common_import()
+        if quantize_model is None:
+            return
         model = quantize_model(
             keras.Sequential([
                 layers.Dense(3, activation='relu', input_shape=(5,)),
@@ -32,6 +37,8 @@ class TestKerasFreeze(ExtTestCase):
 
     def test_quantize_tf(self):
         tf, keras, layers, quantize_model = self.common_import()
+        if quantize_model is None:
+            return
         inputs = tf.keras.layers.Input(shape=(5,))
         inter = tf.keras.layers.Dense(3, activation='relu')(inputs)
         outputs = tf.keras.layers.Dense(3, activation='relu')(inter)
