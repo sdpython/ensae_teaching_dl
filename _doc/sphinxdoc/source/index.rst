@@ -44,7 +44,7 @@ seul framework à suivre cette direction.
 :ref:`blog <ap-main-0>`
 
 .. image:: https://travis-ci.com/sdpython/ensae_teaching_dl.svg?branch=master
-    :target: https://travis-ci.com/sdpython/ensae_teaching_dl
+    :target: https://app.travis-ci.com/github/sdpython/ensae_teaching_dl
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/b7c2o4fqlaxl0r0a?svg=true
