@@ -1,0 +1,9 @@
+
+.. blogpost::
+    :title: Quelques articles
+    :keywords: implémentation
+    :date: 2021-06-14
+    :categories: apprentissage
+
+    * `Simulation-based Bayesian inference for multi-fingered robotic grasping
+      <https://arxiv.org/abs/2109.14275>`_
