@@ -19,7 +19,7 @@ class TestCodeStyle(ExtTestCase):
         src_ = os.path.normpath(os.path.join(thi, "..", "..", "src"))
         check_pep8(src_, fLOG=print,
                    pylint_ignore=('C0103', 'C1801', 'R0201', 'R1705', 'W0108', 'W0613',
-                                  'C0111', 'C0412', 'C0411', 'C0414', 'C0415'),
+                                  'C0111', 'C0412', 'C0411', 'C0414', 'C0415', 'C0209'),
                    skip=["Non-iterable value prange",
                          "E1101: Module 'torch' has no ",
                          "E1101: Class 'mem_flags' has no ",
@@ -37,7 +37,7 @@ class TestCodeStyle(ExtTestCase):
         check_pep8(test, fLOG=print, neg_pattern="temp_.*",
                    pattern=".*coverage.*[.]py$",
                    pylint_ignore=('C0103', 'C1801', 'R0201', 'R1705', 'W0108', 'W0613',
-                                  'C0111', 'C0412', 'C0411', 'C0414', 'C0415'),
+                                  'C0111', 'C0412', 'C0411', 'C0414', 'C0415', 'C0209'),
                    skip=["src' imported but unused",
                          "skip_' imported but unused",
                          "skip__' imported but unused",
