@@ -1,0 +1,25 @@
+
+.. blogpost::
+    :title: Profiler
+    :keywords: profiler
+    :date: 2021-11-21
+    :categories: tools
+
+    Un profiler sert à mesurer le temps passé à n'importe quel
+    endroit du programme. GPU et CPU peuvent fonctionner ensemble,
+    moins il y a de temps, plus le programme est rapide. C'est
+    ce que mesure ce type d'outils :
+
+    .. image:: https://developer.nvidia.com/sites/default/files/akamai/gameworks/ns1.png
+
+    Accessible ici :
+
+    `Nsight Visual Studio Edition 2021.3 Download
+    <https://developer.nvidia.com/nsight-visual-studio-edition-2021_3>`_
+
+    Ce n'est pas le seul, NVidia propose une version :
+    `NVidia Profiler <https://developer.nvidia.com/nvidia-visual-profiler>`_.
+    Son installation nécessite quelques contorsions lors de l'installation,
+    car il nécessite une version spécifique de java,
+    la plus récente ne fonctionne pas. Ca changera sans doute
+    à la prochaine mise à jour.
