@@ -136,6 +136,11 @@ Génération d'images à partir de texte
 * `AttnGAN <https://github.com/taoxugit/AttnGAN>`_,
   `AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks <https://arxiv.org/pdf/1711.10485.pdf>`_
 
+Histoire
+++++++++
+
+* `Revisiting Unreasonable Effectiveness of Data in Deep Learning Era <https://arxiv.org/pdf/1707.02968.pdf>`_
+
 Images en vrac
 ++++++++++++++
 
@@ -175,10 +180,12 @@ s'il s'agit d'images prises par un appareil photos ou d'images médicales.
 * `Deep Supervision with Shape Concepts for Occlusion-Aware 3D Object Parsing <https://arxiv.org/pdf/1612.02699.pdf>`_
 * `Best-Buddies Similarity for Robust Template Matching <https://people.csail.mit.edu/talidekel/papers/BBS_CVPR15.pdf>`_
 
-Histoire
-++++++++
+Imitations
+++++++++++
 
-* `Revisiting Unreasonable Effectiveness of Data in Deep Learning Era <https://arxiv.org/pdf/1707.02968.pdf>`_
+* `XIRL: Cross-embodiment Inverse Reinforcement Learning
+  <https://arxiv.org/abs/2106.03911>`_
+  (`code <https://github.com/google-research/google-research/tree/master/xirl>`_)
 
 Jeux
 ++++
