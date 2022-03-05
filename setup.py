@@ -14,7 +14,7 @@ readme = 'README.rst'
 history = "HISTORY.rst"
 requirements = None
 
-KEYWORDS = project_var_name + ', Xavier Dupré'
+KEYWORDS = [project_var_name, 'Xavier Dupré', 'teachings']
 DESCRIPTION = """Materials for teachings about deep learning, mostly in French."""
 CLASSIFIERS = [
     'Programming Language :: Python :: 3',
