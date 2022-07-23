@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.9.6
+      - image: cimg/python:3.10.5
     
     working_directory: ~/repo
     
@@ -14,22 +14,6 @@ jobs:
           - v2-dependencies-{{ checksum "requirements.txt" }}
           - v2-dependencies-
 
-      - run:
-          name: Install pandoc
-          command: |
-                    sudo apt-get update 
-                    wget https://github.com/jgm/pandoc/releases/download/2.14.1/pandoc-2.14.1-1-amd64.deb
-                    sudo dpkg -i pandoc-2.14.1-1-amd64.deb
-
-      - run:
-          name: Install tex
-          command: |
-                    sudo apt-get install -y texlive
-                    sudo apt-get install -y texlive-latex-extra
-                    sudo apt-get install -y texlive-lang-french
-                    sudo apt-get install -y texlive-xetex
-                    sudo apt-get install -y dvipng
-          
       - run:
           name: Install 7z
           command: |
@@ -45,35 +29,38 @@ jobs:
           command: |
                     sudo apt-get install -y graphviz
 
-      # statsmodels setup.py requires it
       - run:
-          name: install numpy
+          name: Install dependencies for proj
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install --upgrade pip
-            pip install numpy
+            sudo apt-get install -y libgeos-dev proj-data graphviz sqlite3 libtiff5 libtiff5-dev libtiff-dev libsqlite3-dev libcurl4-gnutls-dev
+
+      - run:
+          name: build proj
+          command: |
+            # see https://stackoverflow.com/questions/72442087/cant-install-proj-8-0-0-for-cartopy-linux
+            wget https://download.osgeo.org/proj/proj-9.0.0.tar.gz
+            tar -xf proj-9.0.0.tar.gz
+            cd proj-9.0.0
+            mkdir build && cd build
+            cmake ..
+            cmake --build .
+            sudo cmake --build . --target install
+            cd ..
 
       - run:
           name: install torch, tensorflow
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+            pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/torch_stable.html
             pip install tensorflow
 
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
             pip install -r requirements.txt
 
       - run:
           name: install tensorflow
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
             pip install tensorflow_model_optimization
 
       - save_cache:
@@ -84,40 +71,24 @@ jobs:
       - run:
           name: compile and build
           command: |
-            . venv/bin/activate
             export PYTHONPATH=src
             python setup.py build_ext --inplace
 
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             export PYTHONPATH=src
             python setup.py unittests
 
       - run:
           name: wheel
           command: |
-            . venv/bin/activate
             export PYTHONPATH=src
             python setup.py bdist_wheel
             mkdir -p test-reports/dist
             cp dist/*.whl test-reports/dist
             mkdir -p test-reports/src
             cp -r  src/ensae_teaching_dl test-reports/src
-
-      #- run:
-      #    name: documentation
-      #    command: |
-      #      . venv/bin/activate
-      #      export PYTHONPATH=src
-      #      python setup.py build_sphinx
-            
-      #- run:
-      #    name: copy documentation
-      #    command: |
-      #      mkdir -p test-reports/doc
-      #      zip -r -9  test-reports/doc/documentation_html.zip _doc/sphinxdoc/build/html
             
       - store_artifacts:
           path: test-reports
