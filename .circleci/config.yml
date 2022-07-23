@@ -48,6 +48,11 @@ jobs:
             cd ..
 
       - run:
+          name: install ldconfig
+          command: |
+            sudo ldconfig
+
+      - run:
           name: install torch, tensorflow
           command: |
             pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/torch_stable.html
