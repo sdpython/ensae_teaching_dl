@@ -13,8 +13,9 @@ local_template = os.path.join(os.path.abspath(
 
 set_sphinx_variables(__file__, "ensae_teaching_dl", "Xavier Dupré", 2021,
                      "pydata_sphinx_theme", ['_static'],
-                     locals(), extlinks=dict(
-                         issue=('https://github.com/sdpython/ensae_teaching_dl/issues/%s', 'issue')),
+                     locals(), extlinks=dict(issue=(
+                         'https://github.com/sdpython/ensae_teaching_dl/issues/%s',
+                         'issue %s')),
                      title="ensae_teaching_dl", book=True)
 
 if False:
