@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
 local_template = os.path.join(os.path.abspath(
     os.path.dirname(__file__)), "phdoc_templates")
 
-set_sphinx_variables(__file__, "ensae_teaching_dl", "Xavier Dupré", 2021,
+set_sphinx_variables(__file__, "ensae_teaching_dl", "Xavier Dupré", 2023,
                      "pydata_sphinx_theme", ['_static'],
                      locals(), extlinks=dict(issue=(
                          'https://github.com/sdpython/ensae_teaching_dl/issues/%s',
@@ -46,7 +46,7 @@ blog_root = "http://www.xavierdupre.fr/app/ensae_teaching_dl/helpsphinx/"
 
 html_css_files = ['my-styles.css']
 
-html_logo = "phdoc_static/project_ico.png"
+html_logo = "_static/project_ico.png"
 
 language = "fr"
 
